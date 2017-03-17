@@ -38,14 +38,16 @@
 
 
   <ul id="slide-out" class="side-nav">
-	<li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
-    <li><a class="waves-effect" href="prelims.html">INTRODUCTION</a></li>
+   
+     <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+   
+    <li><a class="waves-effect " href="prelims.html">INTRODUCTION</a></li>
     <li><div class="divider"></div></li>
-    <li><a class="waves-effect " href="#!">REQUEST MESSAGE</a></li>
-    <li><a class="waves-effect" href="#!">RESPONSE MESSAGE</a></li>
-    <li><a class="waves-effect grey" href="methods.html">HTTP METHODS</a></li>
+    <li><a class="waves-effect " href="request message.html">REQUEST MESSAGE</a></li>
+    <li><a class="waves-effect" href="responsemessage.html">RESPONSE MESSAGE</a></li>
+    <li><a class="waves-effect grey " href="methods.html">HTTP METHODS</a></li>
     <li><a class="waves-effect" href="#!">HEADER FIELDS</a></li>
-	<li><a class="waves-effect" href="#!">HTTP STATUS CODE</a></li>
+  <li><a class="waves-effect" href="#!">HTTP STATUS CODE</a></li>
  </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
         
@@ -59,7 +61,7 @@
 			<div style="padding: 35px">
 
 					<ul class="collapsible popout" data-collapsible="accordion">
-					<ul class="collapsible" data-collapsible="accordion">
+					<ul class="collapsible white" data-collapsible="accordion">
 
    				<li>
 					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>REQUEST METHODS</h5></div>
@@ -70,53 +72,88 @@
 						<li>
 					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>GET</div>
 					      <div class="collapsible-body">
+					      <h5>Description</h5>
 					      <p> Transfer current selected representation of the resource identified by the Request URL. Returned resource to message body of the response as an entity.</p>
 					      <p> Most commonly used HTTP Method.</p>
 					      <p> Most supported by all complient.</p>
+					      <p>The HTTP GET method requests a representation of the specified resource. Requests using GET should only retrieve data.</p>
+					      <h5>Syntax</h5>
+					      <p>GET /index.html</p>
 					    </li>
 
 					    <li>
 						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>HEAD</div>
 							      <div class="collapsible-body">
-									<p>Same as GET method except the entity is not included in th response.</p>
-				 				   	<p>Use to Retrieve meta data.</p>
-				 				    <p>Like GET, must be supported by all general purpose.</p>
+							      <h5>Description</h5>
+									<p>The HTTP HEAD method requests the headers that are returned if the specified resource would be requested with an HTTP GET method. Such a request can be done before deciding to download a large resource to save bandwidth.</p>
+									<h5>Syntax</h5>
+									<p>HEAD /index.html</p>
+								 </div>
+					    </li>
+
+					    					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>POST</div>
+							      <div class="collapsible-body">
+							      <h5>Description</h5>
+									<p>The HTTP POST method sends data to the server. The type of the body of the request is indicated by the Content-Type header.</p>
+									<p>The difference between PUT and POST is that PUT is idempotent: calling it once or several times successively has the same effect (that is no side effect), where successive identical POST may have additional effects, like passing an order several times.</p>
+									<h5>Syntax</h5>
+									<p>POST /index.html</p>
 								 </div>
 					    </li>
 
 					    <li>
 						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>PUT</div>
 						      <div class="collapsible-body">
-									 <p>Store the enclosed entity in the message body under the specified Request.</p>	  
+						      <h5>Description</h5>
+									 <p>The HTTP PUT request method creates a new resource or replaces a representation of the target resource with the request payload.</p>	  
+									 <p>The difference between PUT and POST is that PUT is idempotent: calling it once or several times successively has the same effect (that is no side effect), where successive identical POST may have additional effects, like passing an order several times.</p>
+
+								<h5>Syntax</h5>
+									<p>PUT /new.html HTTP/1.1</p>
 						      </div>
 					    </li>
 
 					     <li>
 					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>DELETE</div>
 					      <div class="collapsible-body">
-								 <p>Remove the associated entity.</p>	
-					      
+					      <h5>Description</h5>
+								 <p>The HTTP DELETE request method deletes the specified resource.</p>	
+							<h5>Syntax</h5>
+					      		<p>DELETE /file.html HTTP/1.1</p>
 					      </div>
 					    </li>
 
 					     <li>
 					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>OPTIONS</div>
 					      <div class="collapsible-body">
-								
+					      		<h5>Description</h5>
+								<p>The HTTP OPTIONS method is used to describe the communication options for the target resource. The client can specify a specific URL for the OPTIONS method, or an asterisk (*) to refer to the entire server.</p>
+								<h5>Syntax</h5>
+								<p>OPTIONS /index.html HTTP/1.1</p>
+									<p>OPTIONS * HTTP/1.1</p>
 					      </div>
 					    </li>
 
 					     <li>
 						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>TRACE</div>
 						      <div class="collapsible-body">
-									 <p> It will echo the message back to the client. Whatever it recieves it sends back to the client.</p>
+						      <h5>Description</h5>
+									 <p>The TRACE method is used to invoke a remote, application-layer loop- back of the request message. The final recipient of the request SHOULD reflect the message received back to the client as the entity-body of a 200 (OK) response. The final recipient is either the origin server or the first proxy or gateway to receive a Max-Forwards value of zero (0) in the request (see section 14.31). A TRACE request MUST NOT include an entity.</p>
+									 <p>TRACE allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information.</p>
+									 <h5>Syntax</h5>
+									 <p>TRACE / HTTP/1.1</p>
 							 </div>
 					    </li>
 
 					    <li>
 						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>CONNECT</div>
 						      <div class="collapsible-body">
-									 <p> Use when connecting HTTPS resources. It establishes encyption tunnel.</p>	
+						      <h5>Description</h5>
+									 <p>The HTTP CONNECT method method starts two-way communications with the requested resource. It can be used to open a tunnel.</p>	
+									 <p>The CONNECT method can be used to access websites that use SSL (HTTPS). The client asks an HTTP Proxy server to tunnel the TCP connection to the desired destination. The server then proceeds to make the connection on behalf of the client. Once the connection has been established by the server, the Proxy server continues to proxy the TCP stream to and from the client.</p>
+									 <h5>Syntax</h5>
+									 <p>CONNECT www.example.com:443 HTTP/1.1</p>
 						      </div>
 					    </li>
 								</div>
@@ -137,9 +174,10 @@
 					    	 <li>
 					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>SAFE METHODS</h5></div>
 					      <div class="collapsible-body">
-							
-					       <p> Not expecting changes.<br>
-								(GET, HEAD, OPTIONS, TRACE)</p>
+							<h5>Description</h5>
+					       <p>Safe methods are HTTP methods that do not modify resources. For instance, using GET or HEAD on a resource URL, should NEVER change the resource. However, this is not completely true. It means: it won't change the resource representation. It is still possible, that safe methods do change things on a server or resource, but this should not reflect in a different representation.</p>
+					       <h5>Example</h5>
+								<p>(GET, HEAD, OPTIONS, TRACE)</p>
 
 					      
 					      </div>
@@ -147,8 +185,10 @@
 					    	 <li>
 					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>IDEMPOTENT METHODS</h5></div>
 					      <div class="collapsible-body">
-							 <p> If you use it again you will get the same result.<br>
-								 (GET, HEAD, PUT, DELETE)</p>
+					      <h5>Description</h5>
+							 <p>An idempotent HTTP method is a HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. Again, this only applies to the result, not the resource itself. This still can be manipulated (like an update-timestamp, provided this information is not shared in the (current) resource representation.</p>
+							 <h5>Example</h5>
+								 <p>(GET, HEAD, PUT, DELETE)</p>
 
 					      	
 					      
