@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+
+					  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+					  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+					  <title>Webtek</title>
+
+					  <!-- start of CSS links -->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+					  <!-- start of CSS links -->
+
+					 <style>
+
+							        body {
+							    display: flex;
+							    min-height: 100vh;
+							    flex-direction: column;
+							  }
+
+							  main {
+							    flex: 1 0 auto;
+							  }
+ 
+
+					  </style>
+		  </head>
+
+		  		<body background="img/background3.jpg">
+
+
+
+
+  <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="" class="brand-logo "></a>
+    <a id="logo-container" href="" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
+
+
+
+  <ul id="slide-out" class="side-nav">
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+   
+    <li><a class="waves-effect " href="prelims.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect grey " href="request message.html">REQUEST MESSAGE</a></li>
+    <li><a class="waves-effect" href="responsemessage.html">RESPONSE MESSAGE</a></li>
+    <li><a class="waves-effect" href="methods.html">HTTP METHODS</a></li>
+    <li><a class="waves-effect" href="#!">HEADER FIELDS</a></li>
+  <li><a class="waves-effect" href="#!">HTTP STATUS CODE</a></li>
+
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+</div>
+
+<main>
+<div class="container">
+
+    
+      <ul class="collection">
+      <li class="collection-item"><h3>Request Message</h3>
+      <br>
+      <p class="dark">An HTTP client sends an HTTP request to a server in the form of a request message which includes following format:</p></li>
+      <li class="collection-item">
+      - A Request-line
+      <br>
+      - Zero or more header (General|Request|Entity) fields followed by CRLF
+      <br>
+      -An empty line (i.e., a line with nothing preceding the CRLF) 
+indicating the end of the header fields
+      <br>
+      Optionally a message-body
+      <br><br>
+      The following sections explain each of the entities used in an HTTP request message.</li>
+      <li class="collection-item"><h3>Request-Line</h3>
+      <br>
+      <p class="dark">The Request-Line begins with a method token, followed by the Request-URI and the protocol version, and ending with CRLF. The elements are separated by space SP characters.
+      <br><br>
+   
+      </li>
+      <li class="collection-item"><h3>Request-URI</h3>
+      <br>
+      The Request-URI is a Uniform Resource Identifier and identifies the resource upon which to apply the request. Following are the most commonly used forms to specify an URI:
+      <br><br>
+   
+      <li class="collection-item"><h4>Examples of Request Message</h4>
+      <br>
+      GET /hello.htm HTTP/1.1
+      <br>
+      User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+      <br>
+      Host: www.tutorialspoint.com
+      <br>
+      Accept-Language: en-us
+      <br>
+      Connection: Keep-Alive
+    </ul>
+</div>
+
+
+
+</main>
+
+
+
+
+<hr>
+
+
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
