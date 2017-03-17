@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+
+					  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+					  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+					  <title>Webtek</title>
+
+				
+					  			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+						<style>
+						        body {
+								    display: flex;
+								    min-height: 100vh;
+								    flex-direction: column;
+								  }
+
+								  main {
+								    flex: 1 0 auto;
+								  }
+						 </style>
+		<body background="img/background3.jpg">
+
+		</head>
+<body>
+
+		 <nav class="grey darken-3" style = "height:80px;" role="navigation">
+		    <div class="nav-wrapper container">
+		      <a id="logo-container" href="" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+		    </div>
+		  </nav>
+
+
+  <ul id="slide-out" class="side-nav">
+	<li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    <li><a class="waves-effect" href="prelims.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect " href="#!">REQUEST MESSAGE</a></li>
+    <li><a class="waves-effect" href="#!">RESPONSE MESSAGE</a></li>
+    <li><a class="waves-effect grey" href="methods.html">HTTP METHODS</a></li>
+    <li><a class="waves-effect" href="#!">HEADER FIELDS</a></li>
+	<li><a class="waves-effect" href="#!">HTTP STATUS CODE</a></li>
+ </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+  
+  <h1 class = "center" style = " font-weight:bold; font-family: consolas; color:black; "> HTTP METHODS</h1>
+
+<main>
+		<div class = "container">
+
+			<div style="padding: 35px">
+
+					<ul class="collapsible popout" data-collapsible="accordion">
+					<ul class="collapsible" data-collapsible="accordion">
+
+   				<li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>REQUEST METHODS</h5></div>
+					      <div class="collapsible-body">
+								<div>
+								<ul class="collapsible popout" data-collapsible="accordion">
+								<ul class="collapsible" data-collapsible="accordion">
+						<li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>GET</div>
+					      <div class="collapsible-body">
+					      <p> Transfer current selected representation of the resource identified by the Request URL. Returned resource to message body of the response as an entity.</p>
+					      <p> Most commonly used HTTP Method.</p>
+					      <p> Most supported by all complient.</p>
+					    </li>
+
+					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>HEAD</div>
+							      <div class="collapsible-body">
+									<p>Same as GET method except the entity is not included in th response.</p>
+				 				   	<p>Use to Retrieve meta data.</p>
+				 				    <p>Like GET, must be supported by all general purpose.</p>
+								 </div>
+					    </li>
+
+					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>PUT</div>
+						      <div class="collapsible-body">
+									 <p>Store the enclosed entity in the message body under the specified Request.</p>	  
+						      </div>
+					    </li>
+
+					     <li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>DELETE</div>
+					      <div class="collapsible-body">
+								 <p>Remove the associated entity.</p>	
+					      
+					      </div>
+					    </li>
+
+					     <li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>OPTIONS</div>
+					      <div class="collapsible-body">
+								
+					      </div>
+					    </li>
+
+					     <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>TRACE</div>
+						      <div class="collapsible-body">
+									 <p> It will echo the message back to the client. Whatever it recieves it sends back to the client.</p>
+							 </div>
+					    </li>
+
+					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>CONNECT</div>
+						      <div class="collapsible-body">
+									 <p> Use when connecting HTTPS resources. It establishes encyption tunnel.</p>	
+						      </div>
+					    </li>
+								</div>
+					      
+					    </div>
+					    </li>
+					   
+					     
+				 <li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>EXTENSION METHODS</h5></div>
+					      <div class="collapsible-body">
+								 <p> WebDAV(RFC 4918)<br>
+								 PROPFIND , PROPPATCH , MKCOL , COPY , MOVE , LOCK , UNLOCK</p>
+
+					      
+					      </div>
+					    </li>
+					    	 <li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>SAFE METHODS</h5></div>
+					      <div class="collapsible-body">
+							
+					       <p> Not expecting changes.<br>
+								(GET, HEAD, OPTIONS, TRACE)</p>
+
+					      
+					      </div>
+					    </li>
+					    	 <li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>IDEMPOTENT METHODS</h5></div>
+					      <div class="collapsible-body">
+							 <p> If you use it again you will get the same result.<br>
+								 (GET, HEAD, PUT, DELETE)</p>
+
+					      	
+					      
+					      </div>
+					    </li>
+					     	 <li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>CACHEABLE METHODS</h5></div>
+					      <div class="collapsible-body">
+							 <p> The Request that you get can be cache so that if you can request again it will direct to the cache.</p>
+
+					      
+					      
+					      </div>
+					    </li>
+					  </ul>
+					  </ul>
+		  </div>
+</main>
+
+</div>
+
+
+
+
+
+
+
+<hr>
+
+
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group # 3124214124</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
