@@ -41,7 +41,7 @@
   <nav class="grey darken-3" style = "height:80px;" role="navigation">
     <div class="nav-wrapper container">
     <a id="logo-container" href="" class="brand-logo "></a>
-    <a id="logo-container" href="" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
     </div>
   </nav>
 
@@ -49,16 +49,18 @@
 
   <ul id="slide-out" class="side-nav">
 
-
-     <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
-   
-    <li><a class="waves-effect" href="prelims.html">INTRODUCTION</a></li>
+ 
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    
+    <li><a class="waves-effect grey" href="index.html">HOME</a></li>
+    <li><a class="waves-effect grey" href="prelims.html">INTRODUCTION</a></li>
     <li><div class="divider"></div></li>
-    <li><a class="waves-effect " href="request message.html">REQUEST MESSAGE</a></li>
-    <li><a class="waves-effect grey" href="responsemessage.html">RESPONSE MESSAGE</a></li>
+    <li><a class="waves-effect " href="http.html">HTTP OVERVIEW</a></li>
+    <li><a class="waves-effect" href="headers.html">HTTP MESSAGE HEADERS</a></li>
     <li><a class="waves-effect" href="methods.html">HTTP METHODS</a></li>
-    <li><a class="waves-effect" href="#!">HEADER FIELDS</a></li>
-  <li><a class="waves-effect" href="#!">HTTP STATUS CODE</a></li>
+    <li><a class="waves-effect" href="statuscodes.html">HTTP STATUS CODE</a></li>
+    <li><a class="waves-effect " href="request message.html">REQUEST MESSAGE</a></li>
+    <li><a class="waves-effect" href="responsemessage.html">RESPONSE MESSAGE</a></li>
 
   </ul>
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
@@ -67,7 +69,54 @@
 </div>
 
 <main>
+<div class="container">
 
+    
+      <ul class="collection">
+      <li class="collection-item"><h3>Response Message</h3>
+      <br>
+      <p class="dark">After receiving and interpreting a request message, a server responds with an HTTP response message:</p></li>
+      <li class="collection-item">
+      - A Status-line
+      <br>
+      - Zero or more header (General|Response|Entity) fields followed by CRLF
+      <br>
+      - An empty line (i.e., a line with nothing preceding the CRLF) 
+indicating the end of the header fields
+      <br>
+      - Optionally a message-body
+      <br><br>
+      The following sections explain each of the entities used in an HTTP response message.</li>
+      <li class="collection-item"><h3>Message Status-Line</h3>
+      <br>
+      <p class="dark">A Status-Line consists of the protocol version followed by a numeric status code and its associated textual phrase. The elements are separated by space SP characters.
+      <br><br>
+   
+      </li>
+      <li class="collection-item"><h3>HTTP Version</h3>
+      <br>
+      A server supporting HTTP version 1.1 will return the following version information:
+      <br><br>
+      <mark>HTTP-Version = HTTP/1.1</mark>
+      <li class="collection-item"><h4>Examples of Response Message</h4>
+      <br>
+      HTTP/1.1 200 OK
+      <br>
+      Date: Mon, 27 Jul 2009 12:28:53 GMT
+      <br>
+      Server: Apache/2.2.14 (Win32)
+      <br>
+      Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+      <br>
+      Content-Length: 88
+      <br>
+      Content-Type: text/html
+      <br>
+      Connection: Closed
+      <br>
+
+    </ul>
+</div>
 
 
 </main>
@@ -81,7 +130,13 @@
  <footer class="page-footer grey darken-3">
     <div class="footer-copyright">
       <div class="container">
-        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group</a>
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
       </div>
     </div>
   </footer>
