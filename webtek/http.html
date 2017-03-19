@@ -91,11 +91,13 @@
       <ol style="margin-left: 30px">
       <li>o Scheme (http: or https:)
       
-      <li>o (optional) authentication information o Host and (optional) port number
+      <li>o (optional) authentication information 
+      <li>o Host and (optional) port number
        
-      <li>o Path (resolved to the document root on the server) to the resource o (optional) scheme-specific parameters
+      <li>o Path to the resource (may refer to static or dynamic resources)
+      <li>o (optional) scheme-specific parameters
       
-      <li>o (optional) URL-encoded query
+      <li>o (optional) URL-encoded query (typically provided as key=value pairs with ampersand(&) separators between key/value pairs)
        
       <li>o (optional) bookmark (or fragment identifier)
     
@@ -128,7 +130,16 @@
       <li>o Web applications effect session tracking using mechanism such as cookies on URL-encoded session information to keep track of related client requests
         <br><br>
         </ol>
-      <li>• HTTP provides support for other functionalities such as cache control, content media type (MIME) specification, language and character set specification, content/transfer coding, client-server protocol negotiations, persistent connections, request pipelining, etc.
+      <li>• HTTP provides support for other functionalities such:
+          <ol style="margin-left: 30px">
+              <li>o Cache-control
+                <li>o Conten media type specification(MIME)
+                <li>o language and character set applicaton
+                <li>o conten/trnasfer coding
+                <li>o client/server protocol negotions
+                <li>o persisten connections
+                <li>o request pipelinig, etc.
+          </ol>
       </ul>
       <br><br>
 
