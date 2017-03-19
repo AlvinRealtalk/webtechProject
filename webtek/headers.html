@@ -6,24 +6,62 @@
 
       <!-- CSS  -->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <style>
+
+                                    body {
+                                display: flex;
+                                min-height: 100vh;
+                                flex-direction: column;
+                              }
+
+                              main {
+                                flex: 1 0 auto;
+                              }
+ 
+
+                      </style>
     </head>
     
-    <body class="white">
-      <nav class="cyan darken-3">
-        <div class="nav-wrapper">
-          <center><a style="font-size: 40px">Web Systems and Technology</a></center>
+    <body background="img/background3.jpg">
+      <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
 
-        </div>
-      </nav>
 
-        <nav class="nav-extended">
-            <div class="nav-wrapper">
-               <a href="#" class="brand-logo">HTTP Message Headers</a>
-            </div>
+
+  <ul id="slide-out" class="side-nav">
+
+ 
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    
+    <li><a class="waves-effect grey" href="index.html">HOME</a></li>
+    <li><a class="waves-effect grey" href="prelims.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect " href="http.html">HTTP OVERVIEW</a></li>
+    <li><a class="waves-effect" href="headers.html">HTTP MESSAGE HEADERS</a></li>
+    <li><a class="waves-effect" href="methods.html">HTTP METHODS</a></li>
+    <li><a class="waves-effect" href="statuscodes.html">HTTP STATUS CODE</a></li>
+    <li><a class="waves-effect " href="request message.html">REQUEST MESSAGE</a></li>
+    <li><a class="waves-effect" href="responsemessage.html">RESPONSE MESSAGE</a></li>
+
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+</div>
+
+  <main>
+  <h1 class = "center"  style = "  font-family: consolas; color:black; "> HTTP MESSAGE HEADERS</h1>
+        <nav class="nav-extended container" >
+            
+               
+          
             <div class="nav-content">
-              <ul class="tabs tabs-transparent">
+              <ul class="tabs tabs-transparent cyan darken-1">
                         <li class="tab"><a class="active" href="#test1">General Header Fields</a></li>
                         <li class="tab"><a  href="#test2">Request Header Fields</a></li>
                         <li class="tab"><a href="#test3">Response Header Fields</a></li>
@@ -32,269 +70,246 @@
             </div>
           </nav><br><br><br>
 
-         <div id="test1" class="col s12">          
+         <div id="test1" class="container">    
+
               
             <ul class="collapsible" data-collapsible="accordion">
                 <li>
-                    <div class="collapsible-header">Cache-control
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Cache-control
                     </div>
-                    <div class="collapsible-body"><p>Controls caching of a document</p></div>
+                    <div class="collapsible-body white"><p>Controls caching of a document</p></div>
 
                 </li>
 
                 <li>
-                    <div class="collapsible-header">Connecton</div>
-                    <div class="collapsible-body"><p>Controls whether or not the network connection stays open after the current transaction finishes.</p></div>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Connecton</div>
+                    <div class="collapsible-body white"><p>Controls whether or not the network connection stays open after the current transaction finishes.</p></div>
                 </li>
 
                 <li>
-                    <div class="collapsible-header">Date</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Date</div>
+                    <div class="collapsible-body white"><p>The date and time that the message was originated (in "HTTP-date" format as defined by RFC 7231 date/time formats)</p></div>
                 </li>
 
                 <li>
-                    <div class="collapsible-header">Pragma</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Pragma</div>
+                    <div class="collapsible-body white"><p>Implementation-specific fields that may have various effects anywhere along the request-response chain.</p></div>
                 </li>
                 <li>
-                    <div class="collapsible-header">Trailer</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Trailer</div>
+                    <div class="collapsible-body white"><p>The Trailer general field value indicates that the given set of header fields is present in the trailer of a message encoded with chuncked transfer coding.</p></div>
                 </li>
                 <li>
-                    <div class="collapsible-header">Transfer-Encoding</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                </li>
-
-                <li>
-                    <div class="collapsible-header">Upgrade</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Transfer-Encoding</div>
+                    <div class="collapsible-body white"><p>The form of encoding used to safety transfer the entity to the user.</p></div>
                 </li>
 
                 <li>
-                    <div class="collapsible-header">Via</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Upgrade</div>
+                    <div class="collapsible-body white"><p>Ask the server to upgradeto another protocol.</p></div>
                 </li>
 
                 <li>
-                    <div class="collapsible-header">Warning</div>
-                    <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Via</div>
+                    <div class="collapsible-body white"><p>Informs the server of proxies through which the request was sent.</p></div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Warning</div>
+                    <div class="collapsible-body white"><p>A general warning about possible problems with the entity body.</p></div>
                 </li>
 
             </ul>
         
         </div>
-          <div id="test2" class="col s12">
+          <div id="test2" class="container">
             <ul class="collapsible" data-collapsible="accordion">
               <li>
-                <div class="collapsible-header">Accept
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept
                 </div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-body white"><p>List of mimetypes.</p></div>
                 
             </li>
             
             <li>
-                <div class="collapsible-header">Accept-charset</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept-charset</div>
+                <div class="collapsible-body white"><p>Character sets that are accepted.</p></div>
             </li>
             
             <li>
-                <div class="collapsible-header">Accept-encoding</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept-encoding</div>
+                <div class="collapsible-body white"><p>List of acceptable encodings.</p></div>
             </li>
             
             <li>
-                <div class="collapsible-header">Accpet-language</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accpet-language</div>
+                <div class="collapsible-body white"><p>List acceptable human languages for response.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Authorization</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Authorization</div>
+                <div class="collapsible-body white"><p>Authentication credentials for HTTP authentication.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Expect</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header">From</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Expect</div>
+                <div class="collapsible-body white"><p>Indicates that particular server behaviors are required by the client.</p></div>
             </li>
             
             <li>
-                <div class="collapsible-header">Host</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">From</div>
+                <div class="collapsible-body white"><p>The email address of the user making the request.</p></div>
             </li>
             
             <li>
-                <div class="collapsible-header">If-Match</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Host</div>
+                <div class="collapsible-body white"><p>The domain name of the server and the TCP port number on which the server is listening. The port number may be omitted if the port is the standard port for the service requested.</p></div>
+            </li>
+            
+            <li>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Match</div>
+                <div class="collapsible-body white"><p>Only perform the action if the client supplied entity matches the same entity on the server. This is mainly for methods like PUT to only update a resource if it has been modified since the last user updated it.</p></div>
             </li>
               
             <li>
-                <div class="collapsible-header">If-Modified-Since</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Modified-Since</div>
+                <div class="collapsible-body white"><p>Allows a 304 Not Modified to be returned if content is unchanged.</p></div>
             </li>
               
             <li>
-                <div class="collapsible-header">If-None-Match</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-None-Match</div>
+                <div class="collapsible-body white"><p>Allows a 304 Not Modified to be returned if content is unchanged.</p></div>
             </li>
               
                           <li>
-                <div class="collapsible-header">If-Range</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Range</div>
+                <div class="collapsible-body white"><p>If the entity is unchanged, send me the part(s) that I am missing; otherwise; send me the entire new entity.</p></div>
             </li>
               
                           <li>
-                <div class="collapsible-header">If-Unmodified-Since</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Unmodified-Since</div>
+                <div class="collapsible-body white"><p>Only send the response if the entity has not been modified since a specific time.</p></div>
             </li>
                           <li>
-                <div class="collapsible-header">Proxy-Authentication</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Proxy-Authentication</div>
+                <div class="collapsible-body white"><p>Authorization credentials for connecting to a proxy.</p></div>
             </li>
                           <li>
-                <div class="collapsible-header">Range</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Range</div>
+                <div class="collapsible-body white"><p>Request only part of an entity. Bytes are numbered from 0.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Referrer</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Referrer</div>
+                <div class="collapsible-body white"><p>This is the address of the previous web page from which a link to the currently requested page was followed. </p></div>
             </li>
             <li>
-                <div class="collapsible-header">User-agent</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">User-agent</div>
+                <div class="collapsible-body white"><p>The user agent string of the user agent.</p></div>
             </li>
   
         </ul>
         </div>
                 
-            <div id="test3" class="col s12">
+            <div id="test3" class="container">
                 <ul class="collapsible" data-collapsible="accordion">
             <li>
-                <div class="collapsible-header">Accept-Range</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept-Range</div>
+                <div class="collapsible-body white"><p>What partial content range types this server supports via byte serving.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Age</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Age</div>
+                <div class="collapsible-body white"><p>The age the object has been in a proxy cache in seconds.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">E-Tag</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">E-Tag</div>
+                <div class="collapsible-body white"><p>An identifier for a specific version of a resource, often a message digest.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Location</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Location</div>
+                <div class="collapsible-body white"><p>Used in redirection, or when a new resource has been created.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Proxy-Authenticate</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Proxy-Authenticate</div>
+                <div class="collapsible-body white"><p>Request authentication to access the proxy.</p></div>
             </li> 
             <li>
-                <div class="collapsible-header">Retry-After</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Retry-After</div>
+                <div class="collapsible-body white"><p>If an entity is temporarily unavailable, this instructs the client to try again later. Value could be a specified period of time or a HTTP-date.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Server</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Server</div>
+                <div class="collapsible-body white"><p>	A name for the server</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Server</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header">Vary</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Vary</div>
+                <div class="collapsible-body white"><p>Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server.</p></div>
             </li>
             
             <li>
-                <div class="collapsible-header">WWW-Authenticate</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">WWW-Authenticate</div>
+                <div class="collapsible-body white"><p>Indicates the authentication scheme that should be used to access the requested entity.</p></div>
             </li>
         </ul>
         </div>
         
-          <div id="test4" class="col s12">
+          <div id="test4" class="container">
             <ul class="collapsible" data-collapsible="accordion">
             <li>
-                <div class="collapsible-header">Allow</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Allow</div>
+                <div class="collapsible-body white"><p>Valid methods for a specified resource. To be used for a 405 Method not allowed.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Content-Heading</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-Heading</div>
+                <div class="collapsible-body white"><p>Lorem ipsum dolor sit amet.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Content-language</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-language</div>
+                <div class="collapsible-body white"><p>The natural language or languages of the intended audience for the enclosed content.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Content-length</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-length</div>
+                <div class="collapsible-body white"><p>The length of the response body in octets.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Content-location</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-location</div>
+                <div class="collapsible-body white"><p>An alternate location for the returned data.</p></div>
             </li> 
             <li>
-                <div class="collapsible-header">Content-MD5</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-MD5</div>
+                <div class="collapsible-body white"><p>A Base64-encoded binary MD5 sum of the content of the response.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Content-range</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-range</div>
+                <div class="collapsible-body white"><p>Where in a full body message this partial message belongs.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Content-type</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-type</div>
+                <div class="collapsible-body white"><p>The MIME type of this content.</p></div>
             </li>
             <li>
-                <div class="collapsible-header">Expires</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Expires</div>
+                <div class="collapsible-body white"><p>Gives the date/time after which the response is considered stale.</p></div>
             </li>
             
             <li>
-                <div class="collapsible-header">Last Modified</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Last Modified</div>
+                <div class="collapsible-body white"><p>The last modified date for the requested object .</p></div>
             </li>
         </ul>
         </div>
+
+        </main>
         
-    <footer class="page-footer teal">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Company Bio</h5>
-              <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-            </div>
-            <div class="col l3 s12">
-              <h5 class="white-text">Settings</h5>
-              <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-                <li><a class="white-text" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-            <div class="col l3 s12">
-              <h5 class="white-text">Connect</h5>
-              <ul>
-                <li><a class="white-text" href="#!">Link 1</a></li>
-                <li><a class="white-text" href="#!">Link 2</a></li>
-                <li><a class="white-text" href="#!">Link 3</a></li>
-                <li><a class="white-text" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-          Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-          </div>
-        </div>
+    <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
   </footer>
            <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
