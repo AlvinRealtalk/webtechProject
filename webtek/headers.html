@@ -10,18 +10,18 @@
       <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
       <style>
 
-                                    body {
-                                display: flex;
-                                min-height: 100vh;
-                                flex-direction: column;
-                              }
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+             }
 
-                              main {
-                                flex: 1 0 auto;
-                              }
+            main {
+                flex: 1 0 auto;
+            }
  
 
-                      </style>
+     </style>
     </head>
     
     <body background="img/background3.jpg">
@@ -56,247 +56,288 @@
 
   <main>
   <h1 class = "center"  style = "  font-family: consolas; color:black; "> HTTP MESSAGE HEADERS</h1>
-        <nav class="nav-extended container" >
-            
-               
-          
-            <div class="nav-content">
-              <ul class="tabs tabs-transparent cyan darken-1">
-                        <li class="tab"><a class="active" href="#test1">General Header Fields</a></li>
-                        <li class="tab"><a  href="#test2">Request Header Fields</a></li>
-                        <li class="tab"><a href="#test3">Response Header Fields</a></li>
-                        <li class="tab"><a href="#test4">Entitty Header Fields</a></li>
-              </ul>
-            </div>
-          </nav><br><br><br>
+      
+      <div class = "container">
 
-         <div id="test1" class="container">    
+			<div style="padding: 35px">
 
-              
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Cache-control
+					<ul class="collapsible popout" data-collapsible="accordion">
+					<ul class="collapsible white" data-collapsible="accordion">
+
+   				<li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>General Header Fields</h5></div>
+					      <div class="collapsible-body">
+								<div>
+								<ul class="collapsible popout" data-collapsible="accordion">
+								<ul class="collapsible" data-collapsible="accordion">
+						<li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Cache-control</div>
+					      <div class="collapsible-body">
+                            <p>Controls caching of a document</p>
+					    </li>
+
+					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Connection</div>
+							      <div class="collapsible-body">
+                                    <p>Controls whether or not the network connection stays open after the current transaction finishes.</p>
+								 </div>
+					    </li>
+
+					    					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Date</div>
+							      <div class="collapsible-body">
+                                    <p>The date and time that the message was originated (in "HTTP-date" format as defined by RFC 7231 date/time formats)</p>
+								 </div>
+					    </li>
+
+					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Pragma</div>
+						      <div class="collapsible-body">
+						          <p>Implementation-specific fields that may have various effects anywhere along the request-response chain.</p>
+						      </div>
+					    </li>
+
+					     <li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Transfer-encoding</div>
+					      <div class="collapsible-body">
+					           <p>The form of encoding used to safety transfer the entity to the user.</p>
+					      </div>
+					    </li>
+
+					     <li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Trailer</div>
+					      <div class="collapsible-body">
+					      		<p>The Trailer general field value indicates that the given set of header fields is present in the trailer of a message encoded with chuncked transfer coding.</p>
+					      </div>
+					    </li>
+
+					     <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Upgrade</div>
+						      <div class="collapsible-body">
+						          <p>Ask the server to upgradeto another protocol.</p>
+							 </div>
+					    </li>
+                        <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Via</div>
+						      <div class="collapsible-body">
+						         <p>Informs the server of proxies through which the request was sent.</p>
+							 </div>
+					    </li>
+                         <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Warning</div>
+						      <div class="collapsible-body">
+						         <p>A general warning about possible problems with the entity body.</p>
+							 </div>
+					    </li>
+								</div>
+					      
+					    </div>
+					    </li>
+
+
+   				     <li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>Request Header Fields</h5></div>
+					      <div class="collapsible-body">
+								<div>
+								<ul class="collapsible popout" data-collapsible="accordion">
+								<ul class="collapsible" data-collapsible="accordion">
+						<li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Accept</div>
+					      <div class="collapsible-body">
+                            <p>List of mimetypes.</p>
+					    </li>
+
+					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Accept-charset</div>
+							      <div class="collapsible-body">
+                                    <p>Character sets that are accepted.</p>
+								 </div>
+					    </li>
+
+					    					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Accept-encoding</div>
+							      <div class="collapsible-body">
+                                    <p>List of acceptable encodings.</p>
+								 </div>
+					    </li>
+
+					    <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Accept-language</div>
+						      <div class="collapsible-body">
+						          <p>List acceptable human languages for response.</p></div>
+						      
+					    </li>
+
+					     <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Authorization</div>
+						      <div class="collapsible-body">
+						          <p>Authentication credentials for HTTP authentication.</p></div>
+						      
+					    </li>
+
+
+					     <li>
+					      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Expect</div>
+					      <div class="collapsible-body">
+					      		<p>Indicates that particular server behaviors are required by the client.</p>
+					      </div>
+					    </li>
+
+					     <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>From</div>
+						      <div class="collapsible-body">
+						          <p>The email address of the user making the request.</p>
+							 </div>
+					    </li>
+                        <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Host</div>
+						      <div class="collapsible-body">
+						         <p>The domain name of the server and the TCP port number on which the server is listening. The port number may be omitted if the port is the standard port for the service requested.</p>
+							 </div>
+					    </li>
+                         <li>
+						      <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>If-Match</div>
+						      <div class="collapsible-body">
+						        <p>Allows a 304 Not Modified to be returned if content is unchanged.</p>
+							 </div>
+					    </li>
+                        
+                        <li>
+                            <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>If-Range</div>
+                            <div class="collapsible-body white"><p>If the entity is unchanged, send me the part(s) that I am missing; otherwise; send me the entire new entity.</p></div>
+                        </li>
+                                    
+                        <li>
+                            <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>If-Unmodified-Since</div>
+                            <div class="collapsible-body white"><p>Only send the response if the entity has not been modified since a specific time.</p></div>
+                        </li>
+                         <li>
+                             <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Proxy-Authentication</div>
+                             <div class="collapsible-body white"><p>Authorization credentials for connecting to a proxy.</p></div>
+                        </li>
+                        
+                        <li>
+                            <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Range</div>
+                            <div class="collapsible-body white"><p>Request only part of an entity. Bytes are numbered from 0.</p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Referrer</div>
+                            <div class="collapsible-body white"><p>This is the address of the previous web page from which a link to the currently requested page was followed. </p></div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>User-agent</div>
+                            <div class="collapsible-body white"><p>The user agent string of the user agent.</p></div>
+                        </li>
                     </div>
-                    <div class="collapsible-body white"><p>Controls caching of a document</p></div>
+                                    
+                    </li>
+                                    
+                        <li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>Response Header Fields</h5></div>
+					      <div class="collapsible-body">
+								<div>
+								<ul class="collapsible popout" data-collapsible="accordion">
+								<ul class="collapsible" data-collapsible="accordion">
+                                    
+                            <li>
+                                 <div class="collapsible-header grey darken-3" style = "color:white;"><i class="material-icons"></i>Accept-Range</div>
+                                <div class="collapsible-body white"><p>What partial content range types this server supports via byte serving.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Age</div>
+                                <div class="collapsible-body white"><p>The age the object has been in a proxy cache in seconds.</p></div>
+                            </li>
+                            <li>
+                                 <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>E-Tag</div>
+                                <div class="collapsible-body white"><p>An identifier for a specific version of a resource, often a message digest.</p></div>
+                            </li>
+                            <li>
+                                 <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Location</div>
+                                <div class="collapsible-body white"><p>Used in redirection, or when a new resource has been created.</p></div>
+                            </li>
+                            <li>
+                                 <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Proxy-Authenticate</div>
+                                <div class="collapsible-body white"><p>Request authentication to access the proxy.</p></div>
+                            </li> 
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Retry-After</div>
+                                <div class="collapsible-body white"><p>If an entity is temporarily unavailable, this instructs the client to try again later. Value could be a specified period of time or a HTTP-date.</p></div>
+                            </li>
+                            <li>
+                                 <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Server</div>
+                                <div class="collapsible-body white"><p>	A name for the server</p></div>
+                            </li>
+                            <li>
+                                 <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Vary</div>
+                                <div class="collapsible-body white"><p>Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server.</p></div>
+                            </li>
 
-                </li>
+                            <li>
+                                 <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>WWW-Authenticate</div>
+                                <div class="collapsible-body white"><p>Indicates the authentication scheme that should be used to access the requested entity.</p></div>
+                            </li>
+                                    </div>
+						
+                         </li>
+                                    
+                        <li>
+					      <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>Entity Header Fields</h5></div>
+					      <div class="collapsible-body">
+								<div>
+								<ul class="collapsible popout" data-collapsible="accordion">
+								<ul class="collapsible" data-collapsible="accordion">
+                                    
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Allow</div>
+                                <div class="collapsible-body white"><p>Valid methods for a specified resource. To be used for a 405 Method not allowed.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Content-Heading</div>
+                                <div class="collapsible-body white"><p>Lorem ipsum dolor sit amet.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Content-language</div>
+                                <div class="collapsible-body white"><p>The natural language or languages of the intended audience for the enclosed content.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Content-length</div>
+                                <div class="collapsible-body white"><p>The length of the response body in octets.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Content-location</div>
+                                <div class="collapsible-body white"><p>An alternate location for the returned data.</p></div>
+                            </li> 
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Content-MD5</div>
+                                <div class="collapsible-body white"><p>A Base64-encoded binary MD5 sum of the content of the response.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Content-range</div>
+                                <div class="collapsible-body white"><p>Where in a full body message this partial message belongs.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Content-type</div>
+                                <div class="collapsible-body white"><p>The MIME type of this content.</p></div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Expires</div>
+                                <div class="collapsible-body white"><p>Gives the date/time after which the response is considered stale.</p></div>
+                            </li>
 
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Connecton</div>
-                    <div class="collapsible-body white"><p>Controls whether or not the network connection stays open after the current transaction finishes.</p></div>
-                </li>
+                            <li>
+                                <div class="collapsible-header grey darken-3" style = "color:white;" ><i class="material-icons" ></i>Last Modified</div>
+                                <div class="collapsible-body white"><p>The last modified date for the requested object .</p></div>
+                            </li>
+                         </li>
+                            </ul>
+                            </ul>
+					    </div>
+					  </ul>
+					  </ul>
+		          </div>
+             </div>
+    </main>
 
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Date</div>
-                    <div class="collapsible-body white"><p>The date and time that the message was originated (in "HTTP-date" format as defined by RFC 7231 date/time formats)</p></div>
-                </li>
-
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Pragma</div>
-                    <div class="collapsible-body white"><p>Implementation-specific fields that may have various effects anywhere along the request-response chain.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Trailer</div>
-                    <div class="collapsible-body white"><p>The Trailer general field value indicates that the given set of header fields is present in the trailer of a message encoded with chuncked transfer coding.</p></div>
-                </li>
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Transfer-Encoding</div>
-                    <div class="collapsible-body white"><p>The form of encoding used to safety transfer the entity to the user.</p></div>
-                </li>
-
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Upgrade</div>
-                    <div class="collapsible-body white"><p>Ask the server to upgradeto another protocol.</p></div>
-                </li>
-
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Via</div>
-                    <div class="collapsible-body white"><p>Informs the server of proxies through which the request was sent.</p></div>
-                </li>
-
-                <li>
-                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Warning</div>
-                    <div class="collapsible-body white"><p>A general warning about possible problems with the entity body.</p></div>
-                </li>
-
-            </ul>
-        
-        </div>
-          <div id="test2" class="container">
-            <ul class="collapsible" data-collapsible="accordion">
-              <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept
-                </div>
-                <div class="collapsible-body white"><p>List of mimetypes.</p></div>
-                
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept-charset</div>
-                <div class="collapsible-body white"><p>Character sets that are accepted.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept-encoding</div>
-                <div class="collapsible-body white"><p>List of acceptable encodings.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accpet-language</div>
-                <div class="collapsible-body white"><p>List acceptable human languages for response.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Authorization</div>
-                <div class="collapsible-body white"><p>Authentication credentials for HTTP authentication.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Expect</div>
-                <div class="collapsible-body white"><p>Indicates that particular server behaviors are required by the client.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">From</div>
-                <div class="collapsible-body white"><p>The email address of the user making the request.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Host</div>
-                <div class="collapsible-body white"><p>The domain name of the server and the TCP port number on which the server is listening. The port number may be omitted if the port is the standard port for the service requested.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Match</div>
-                <div class="collapsible-body white"><p>Only perform the action if the client supplied entity matches the same entity on the server. This is mainly for methods like PUT to only update a resource if it has been modified since the last user updated it.</p></div>
-            </li>
-              
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Modified-Since</div>
-                <div class="collapsible-body white"><p>Allows a 304 Not Modified to be returned if content is unchanged.</p></div>
-            </li>
-              
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-None-Match</div>
-                <div class="collapsible-body white"><p>Allows a 304 Not Modified to be returned if content is unchanged.</p></div>
-            </li>
-              
-                          <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Range</div>
-                <div class="collapsible-body white"><p>If the entity is unchanged, send me the part(s) that I am missing; otherwise; send me the entire new entity.</p></div>
-            </li>
-              
-                          <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">If-Unmodified-Since</div>
-                <div class="collapsible-body white"><p>Only send the response if the entity has not been modified since a specific time.</p></div>
-            </li>
-                          <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Proxy-Authentication</div>
-                <div class="collapsible-body white"><p>Authorization credentials for connecting to a proxy.</p></div>
-            </li>
-                          <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Range</div>
-                <div class="collapsible-body white"><p>Request only part of an entity. Bytes are numbered from 0.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Referrer</div>
-                <div class="collapsible-body white"><p>This is the address of the previous web page from which a link to the currently requested page was followed. </p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">User-agent</div>
-                <div class="collapsible-body white"><p>The user agent string of the user agent.</p></div>
-            </li>
-  
-        </ul>
-        </div>
-                
-            <div id="test3" class="container">
-                <ul class="collapsible" data-collapsible="accordion">
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Accept-Range</div>
-                <div class="collapsible-body white"><p>What partial content range types this server supports via byte serving.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Age</div>
-                <div class="collapsible-body white"><p>The age the object has been in a proxy cache in seconds.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">E-Tag</div>
-                <div class="collapsible-body white"><p>An identifier for a specific version of a resource, often a message digest.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Location</div>
-                <div class="collapsible-body white"><p>Used in redirection, or when a new resource has been created.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Proxy-Authenticate</div>
-                <div class="collapsible-body white"><p>Request authentication to access the proxy.</p></div>
-            </li> 
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Retry-After</div>
-                <div class="collapsible-body white"><p>If an entity is temporarily unavailable, this instructs the client to try again later. Value could be a specified period of time or a HTTP-date.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Server</div>
-                <div class="collapsible-body white"><p>	A name for the server</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Vary</div>
-                <div class="collapsible-body white"><p>Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">WWW-Authenticate</div>
-                <div class="collapsible-body white"><p>Indicates the authentication scheme that should be used to access the requested entity.</p></div>
-            </li>
-        </ul>
-        </div>
-        
-          <div id="test4" class="container">
-            <ul class="collapsible" data-collapsible="accordion">
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Allow</div>
-                <div class="collapsible-body white"><p>Valid methods for a specified resource. To be used for a 405 Method not allowed.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-Heading</div>
-                <div class="collapsible-body white"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-language</div>
-                <div class="collapsible-body white"><p>The natural language or languages of the intended audience for the enclosed content.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-length</div>
-                <div class="collapsible-body white"><p>The length of the response body in octets.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-location</div>
-                <div class="collapsible-body white"><p>An alternate location for the returned data.</p></div>
-            </li> 
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-MD5</div>
-                <div class="collapsible-body white"><p>A Base64-encoded binary MD5 sum of the content of the response.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-range</div>
-                <div class="collapsible-body white"><p>Where in a full body message this partial message belongs.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Content-type</div>
-                <div class="collapsible-body white"><p>The MIME type of this content.</p></div>
-            </li>
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Expires</div>
-                <div class="collapsible-body white"><p>Gives the date/time after which the response is considered stale.</p></div>
-            </li>
-            
-            <li>
-                <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Last Modified</div>
-                <div class="collapsible-body white"><p>The last modified date for the requested object .</p></div>
-            </li>
-        </ul>
-        </div>
-
-        </main>
         
     <footer class="page-footer grey darken-3">
     <div class="footer-copyright">
