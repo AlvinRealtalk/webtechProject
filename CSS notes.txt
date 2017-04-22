@@ -1,0 +1,203 @@
+CSS - stands for cascading Style Sheets
+    - describes how HTML elements are to be dispayed on screen, paper, or in other media
+    - saves a lot of work. It can control the layout of multiple web pages all at once
+    - external stylesheets are stored in CSS files.
+
+CSS Syntax and Selectors
+ - A CSS rule set consists of a selector and a declaration block:
+
+selector -- h1    declaration -- {color:blue; font-size:12px;}
+
+> The selector points to the HTML element you want to style. 
+> The declaration block contains one or more declarations seperated by semicolons.
+> Each declaration includes a CSS property name and value, seperated by a colon.
+> A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+
+example:
+ 
+p {
+	color: red;
+	text-align: center;
+}
+
+CSS Selectors
+ - CSS selectors are used to "find" (or select) HTML elements based on their element name, id, class, attribute, and more.
+
+*The id selector
+ - The id selector uses the id attribute of an HTML element to select a specific element. 
+The id of an element should be unique within a page, so the id selectors is used to select one unique element.
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+
+*The class selector
+ - The class selector selects elements with a specific class attribute.
+to select elements with a specific class, write a period (.) character, followed by the name of the class.
+
+CSS Comments
+ - Comments are used to explain the code, and may help when you edit the source code at a later date.
+Comments are ignored by browsers. A CSS comment starts with /* and ends with */. Comments can also span multiple lines.
+
+Three Ways to Insert CSS
+> External Style sheet
+> Internal style sheet
+> Inline style
+
+External Style sheet
+ - With an external style sheet, you can change the look of an entire website by changing just one file. 
+Each page must include a referene to the external style sheet file inside the <link> element. The <link> element goes
+inside the <head> section. An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet
+file must be saved with a .css extension.
+
+Internal Style sheet
+ - An internal style sheet may be used if one single page has a unique style. 
+Interal styles are defined within the <style> element, inside the <head> section of an HTML page.
+
+Inline Styles
+ - An inline style may be used to apply a unique style for a single element.
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+
+Multiple Style Sheets
+ - If some properties have been defined for the same selector (element) in different style sheets,
+the value from the last read style sheet will be used. 
+
+CSS Colors
+ - Colors in CSS are most often specified by: 
+> a valid color name -- like "red"
+> an RGB value -- like "rgb(255,0,0)"
+> a HEX value -- like "#ff0000"
+
+Hexadecimal Colors
+ - RGB values can also be specified using hexadecimal color values in the form: #RRGGBB, where RR (red),
+GG (green) and BB (blue) are hexadecimal values between 00 and FF (same as decimal 0-255).
+For example, #FF0000 is displayed as red, because red is set to its highest value (FF) and the others are set to the lowest value (00).
+
+CSS Background
+ - The CSS background properties are used to define the background effects for elements.
+CSS background properties:
+> background-color -- property specifies the background color of an element.
+> background-image -- property specifies an image to use as the background of an element. By default, the image is repeated so it covers the entire element.
+> background-repeat -- Sets how a background image will be repeated
+> background-attachment -- Sets whether a background image is fixed or scrolls with the rest of the page.
+> background-position -- Sets the starting position of a background image.
+
+CSS Boarder Properties -- The CSS border properties allow you to specify the style, width, and color of an element's border.
+
+Border Style -- The border-style property specifies what kind of border to display.
+
+The following values are allowed:
+
+dotted - Defines a dotted border
+dashed - Defines a dashed border
+solid - Defines a solid border
+double - Defines a double border
+groove - Defines a 3D grooved border. The effect depends on the border-color value
+ridge - Defines a 3D ridged border. The effect depends on the border-color value
+inset - Defines a 3D inset border. The effect depends on the border-color value
+outset - Defines a 3D outset border. The effect depends on the border-color value
+none - Defines no border
+hidden - Defines a hidden border
+
+Border Width -- The border-width property specifies the width of the four borders.
+Border Color -- The border-color property is used to set the color of the four borders.
+
+CSS Margins
+ - The CSS margin properties are used to generate space around elements.
+The margin properties set the size of the white space outside the border.
+
+CSS Padding
+ - The CSS padding properties are used to generate space around content.
+The padding clears an area around the content (inside the border) of an element.
+With CSS, you have full control over the padding. There are CSS properties for setting 
+the padding for each side of an element (top, right, bottom, and left).
+
+CSS Text
+> Text Color -- The color property is used to set the color of the text.
+> Text Alignment -- The text-align property is used to set the horizontal alignment of a text. A text can be left or right aligned, centered, or justified.
+> Text Decoration --T he text-decoration property is used to set or remove decorations from text.
+> Text Transformation -- The text-transform property is used to specify uppercase and lowercase letters in a text.
+> Text Indentation -- The text-indent property is used to specify the indentation of the first line of a text.
+> Text Direction -- The direction property is used to change the text direction of an element
+> Word Spacing -- The word-spacing property is used to specify the space between the words in a text
+
+CSS Font
+> font -- Sets all the font properties in one declaration
+> font-family -- Specifies the font family for text
+> font-size -- Specifies the font size of text
+> font-style -- Specifies the font style for text
+> font-weight -- Specifies the weight of a font
+
+CSS List
+> list-style -- Sets all the properties for a list in one declaration
+> list-style-image -- Specifies an image as the list-item marker
+> list-style-position -- Specifies if the list-item markers should appear inside or outside the content flow
+> list-style-type -- Specifies the type of list-item marker
+
+CSS Layout - The display property >> The display property is the most important CSS property for controlling layout.
+
+> The display Property -- The display property specifies if/how an element is displayed.
+> Block-level Elements -- A block-level element always starts on a new line and takes 
+up the full width available (stretches out to the left and right as far as it can).
+> Inline Elements -- An inline element does not start on a new line and only takes up as much width as necessary.
+> Display: none; -- is commonly used with JavaScript to hide and show elements without deleting and recreating them. 
+Take a look at our last example on this page if you want to know how this can be achieved.
+
+
+CSS Pseudo-classes
+ -- A pseudo-class is used to define a special state of an element. For example, it can be used to:
+
+> Style an element when a user mouses over it
+> Style visited and unvisited links differently
+> Style an element when it gets focus
+
+Syntax: 
+
+selector:pseudo-class {
+    property:value;
+}
+
+All pseudo-classes
+
+
+:active		a:active	--	Selects the active link
+:checked	input:checked	--	Selects every checked <input> element
+:disabled	input:disabled	--	Selects every disabled <input> element
+:empty		p:empty	Selects --	every <p> element that has no children
+:enabled	input:enabled	--	Selects every enabled <input> element
+:first-child	p:first-child	--	Selects every <p> elements that is the first child of its parent
+:first-of-type	p:first-of-type	--	Selects every <p> element that is the first <p> element of its parent
+:focus		input:focus	--	Selects the <input> element that has focus
+:hover		a:hover		--	Selects links on mouse over
+:in-range	input:in-range	--	Selects <input> elements with a value within a specified range
+:invalid	input:invalid	--	Selects all <input> elements with an invalid value
+:lang(language)	p:lang(it)	--	Selects every <p> element with a lang attribute value starting with "it"
+:last-child	p:last-child	--	Selects every <p> elements that is the last child of its parent
+:last-of-type	p:last-of-type	--	Selects every <p> element that is the last <p> element of its parent
+:link		a:link		--	Selects all unvisited links
+:not(selector)	:not(p)		--	Selects every element that is not a <p> element
+
+:nth-child(n)		p:nth-child(2)		--	Selects every <p> element that is the second child of its parent
+:nth-last-child(n)	p:nth-last-child(2)	--	Selects every <p> element that is the second child of its parent, counting from the last child
+:nth-last-of-type(n)	p:nth-last-of-type(2)	--	Selects every <p> element that is the second <p> element of its parent, counting from the last child
+:nth-of-type(n)		p:nth-of-type(2)	--	Selects every <p> element that is the second <p> element of its parent
+:only-of-type		p:only-of-type		--	Selects every <p> element that is the only <p> element of its parent
+:only-child		p:only-child		--	Selects every <p> element that is the only child of its parent
+:optional		input:optional		--	Selects <input> elements with no "required" attribute
+:out-of-range		input:out-of-range	--	Selects <input> elements with a value outside a specified range
+:read-only		input:read-only		--	Selects <input> elements with a "readonly" attribute specified
+:read-write		input:read-write	--	Selects <input> elements with no "readonly" attribute
+:required		input:required		--	Selects <input> elements with a "required" attribute specified
+:root			root			--	Selects the document's root element
+:target			#news:target		--	Selects the current active #news element (clicked on a URL containing that anchor name)
+:valid			input:valid		--	Selects all <input> elements with a valid value
+:visited		a:visited		--	Selects all visited links
+
+
+All CSS Pseudo Elements
+
+::after		p::after	--	Insert content after every <p> element
+::before	p::before	--	Insert content before every <p> element
+::first-letter	p::first-letter	--	Selects the first letter of every <p> element
+::first-line	p::first-line	--	Selects the first line of every <p> element
+::selection	p::selection	--	Selects the portion of an element that is selected by a user
+
+
+
