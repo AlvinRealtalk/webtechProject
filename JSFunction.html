@@ -1,0 +1,550 @@
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>webtech</title>
+
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <style>
+
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+             }
+
+            main {
+                flex: 1 0 auto;
+            }
+ 
+
+     </style>
+    </head>
+    
+<body bgcolor="#b3e5fc">
+<main>
+<div class="container">
+
+
+     <center>     <h1 style="background-color: grey">JS Function </h1></center>         
+
+      <ul class="collection">
+      <li class="collection-item" style = "  font-family: consolas; color:black;""><center><h3 style="background-color: grey">JavaScript Function Definitions</h3></center>
+      <br>
+      <p style = "font-size: 15px">JavaScript functions are <b> defined </b> with the <b>function </b>keyword.
+                      You can use a function <b>declaration </b> or a function <b>expression.</b>
+        <p style = "font-size: 25px"><u>Function Declarations</u>
+      </li>
+      </ul>
+
+
+
+ <ul class="collapsible" data-collapsible="accordion">
+
+
+
+   
+   <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Function Parameters</div>
+   <div class="collapsible-body white">
+         <p style = "font-size: 15px">A JavaScript function does not perform any checking on parameter values (arguments).
+
+    
+
+
+
+       <ul class="collapsible" data-collapsible="accordion">
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Function Parameters and Arguments</div> 
+           <div class="collapsible-body white">
+            <p style="margin-left: 20px"><b>functionName(parameter1, parameter2, parameter3) {
+            <p style="margin-left: 30px">code to be executed
+            <p style="margin-left: 20px"> } </b>
+           <p>Function <b>parameters</b> are the <b>names</b> listed in the function definition. <br> 
+             Function <b>arguments</b> are the real <b>values</b> passed to (and received by) the function.
+               </div>
+      </li>
+
+
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Parameter Rules</div> 
+           <div class="collapsible-body white">
+
+     
+          <p style="margin-left: 30px"><b> JavaScript function definitions do not specify data types for</b> parameters.
+          <p style="margin-left: 30px"> <b>JavaScript functions do not perform type checking on the passed</b> arguments.
+          <p style="margin-left: 30px"> <b>JavaScript functions do not check the number of arguments received.</b>
+           </div>
+      </li>
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Parameter Defaults</div>
+       <div class="collapsible-body white">
+           <p>If a function is called with <b>missing arguments</b> (less than declared), the missing values are set to: <b>undefined</b>
+           <p style = "font-size: 15px">Sometimes this is acceptable, but sometimes it is better to assign a default value to the parameter:
+
+           <p style = "font-size: 20px">Example
+           <p style="margin-left: 20px"><b> function myFunction(x, y) { 
+           <p style="margin-left: 30px"> if (y === undefined) {
+           <p style="margin-left: 30px">y = 0;
+           <p style="margin-left: 30px"> }
+           <p style="margin-left: 20px">   }</b><br>
+            If a function is called with <b>too many arguments</b> (more than declared), these arguments can be reached using <b>the arguments object</b>
+           </div>
+       </li> 
+
+
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >The Arguments Object</div>
+        <div class="collapsible-body white">
+        <p>JavaScript functions have a built-in object called the arguments object.<br>
+
+        The argument object contains an array of the arguments used when the function was called (invoked).<br>
+
+         This way you can simply use a function to find (for instance) the highest value in a list of numbers:
+        
+        <p style = "font-size: 20px">Example:
+        <p style="margin-left: 20px"><b>x = findMax(1, 123, 500, 115, 44, 88);<br>
+        function findMax() {
+        <p style="margin-left: 30px">var i; <br>
+                                     var max = -Infinity; <br>
+                                     for (i = 0; i < arguments.length; i++) {
+      <p style="margin-left: 40px">if (arguments[i] > max) { <br>
+      <p style="margin-left: 50px"> max = arguments[i];
+      <p style="margin-left: 40px">}
+      <p style="margin-left: 30px">} <br>
+                                  return max;
+      <p style = "font-size: 20px">} </b>
+
+          </div>
+        </li> 
+
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Arguments are Passed by Value</div> 
+        <div class="collapsible-body white">
+        <p>The parameters, in a function call, are the function's arguments.<br>
+
+          JavaScript arguments are passed by <b>value:</b> The function only gets to know the values, not the argument's locations.<br>
+
+          If a function changes an argument's value, it does not change the parameter's original value.<br>
+
+          <b>Changes to arguments are not visible (reflected) outside the function.</b>
+     
+          
+           </div>
+      </li>
+
+
+        
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Objects are Passed by Reference</div>
+        <div class="collapsible-body white">
+        <p>In JavaScript, object references are values.<br>
+
+          Because of this, objects will behave like they are passed by <b>reference:</b><br>
+
+          If a function changes an object property, it changes the original value. <br>
+
+        <b>Changes to object properties are visible (reflected) outside the function. </b>           
+      
+          </div>
+        </li> 
+
+       
+       </ul>
+       </div>
+       </li>
+
+
+
+
+
+
+
+
+
+
+<li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Function Invocation</div>
+   <div class="collapsible-body white">
+         <p>JavaScript functions can be invoked in 4 different ways.<br>
+
+                       Each method differs in how <b> this</b> is initialized.
+
+    
+
+       <p style = "font-size: 30px"> The <b><i>this</i></b> Keyword 
+       <p>In JavaScript, the thing called this, is the object that "owns" the current code. <br>
+        The value of this, when used in a function, is the object that "owns" the function.
+
+
+
+       <ul class="collapsible" data-collapsible="accordion">
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Invoking a JavaScript Function</div> 
+           <div class="collapsible-body white">
+            <p style="margin-left: 20px">You have already learned that the code inside a JavaScript function will execute when "something" invokes it. <br>
+
+            The code in a function is not executed when the function is <b>defined</b>. It is executed when the function is <b>invoked</b>.<br>
+
+            Some people use the term <b>"call a function"</b> instead of <b>"invoke a function"</b>.<br>
+
+            It is also quite common to say "call upon a function", "start a function", or "execute a function".<br>
+
+            In this tutorial, we will use <b>invoke</b>, because a JavaScript function can be invoked without being called.
+
+               </div>
+      </li>
+
+
+
+      
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Invoking a Function as a Function</div> 
+           <div class="collapsible-body white">
+            <p style = "font-size: 20px">Example
+            <p style="margin-left: 20px"><b>function myFunction(a, b) {
+            <p style="margin-left: 30px">return a * b;
+            <p style="margin-left: 20px">}<br>
+                                        myFunction(10, 2);  </b> // myFunction(10, 2) will return 20
+
+
+           <p>The function above does not belong to any object. But in JavaScript there is always a default global object. <br>
+
+            In HTML the default global object is the HTML page itself, so the function above "belongs" to the HTML page.<br>
+
+            In a browser the page object is the browser window. The function above automatically becomes a window function.<br>
+
+            myFunction() and window.myFunction() is the same function:
+
+
+            <p style = "font-size: 20px">Example
+            <p style="margin-left: 20px"><b>function myFunction(a, b) {
+            <p style="margin-left: 30px">return a * b;
+            <p style="margin-left: 20px">}<br>
+                                       window.myFunction(10, 2);  </b> // window.myFunction(10, 2) will also return 20
+            
+               </div>
+      </li>
+
+
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >The Global Object</div> 
+           <div class="collapsible-body white">
+
+     
+          <p > When a function is called without an owner object, the value of <b>this</b>> becomes the global object. <br>
+               In a web browser the global object is the browser window.<br>
+               This example returns the window object as the value of <b>this:</b> 
+
+          <p style = "font-size: 20px">Example
+            <p style="margin-left: 20px"><b>function myFunction() {
+            <p style="margin-left: 30px">return this;
+            <p style="margin-left: 20px">}<br>
+                                      myFunction();    </b> // Will return the window object
+
+           </div>
+      </li>
+
+
+
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Invoking a Function as a Method</div>
+       <div class="collapsible-body white">
+           <p>In JavaScript you can define function as object methods.
+
+               The following example creates an object (<b>myObject</b>), with two properties (<b>firstName</b> and <b>lastName</b>), and a method (<b>fullName</b>):
+
+           <p style = "font-size: 20px">Example
+           <p style="margin-left: 20px"><b>var myObject = {
+           <p style="margin-left: 30px">firstName:"John",
+                                        lastName: "Doe",
+                                        fullName: function () {
+           
+           <p style="margin-left: 40px">return this.firstName + " " + this.lastName;
+           <p style="margin-left: 30px">}
+           <p style="margin-left: 20px">} <br>
+            myObject.fullName(); </b>     // Will return "John Doe"
+           <p> A constructor invocation creates a new object. The new object inherits the properties and methods from its constructor.
+           
+           </div>
+       </li> 
+
+
+
+
+
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Invoking a Function with a Function Method</div>
+        <div class="collapsible-body white">
+        <p>In JavaScript, functions are objects. JavaScript functions have properties and methods.
+
+         <b>call()</b> and <b>apply()</b> are predefined JavaScript function methods. Both methods can be used to invoke a function, and both methods must have the owner object as first parameter.
+        
+        <p style = "font-size: 20px">Example:
+        <p style="margin-left: 20px"><b>function myFunction(a, b) {
+        <p style="margin-left: 30px">return a * b;
+        <p style="margin-left: 20px">} <br>
+          myObject = myFunction.call(myObject, 10, 2);</b>     // Will return 20
+        <br>
+
+        <p style = "font-size: 20px">Example:
+        <p style="margin-left: 20px"><b>function myFunction(a, b) {
+        <p style="margin-left: 30px">return a * b;
+        <p style="margin-left: 20px">} <br>
+        myArray = [10, 2];<br>
+        myObject = myFunction.apply(myObject, myArray);</b>  // Will also return 20
+
+
+       <p>Both methods take an owner object as the first argument. The only difference is that call() takes the function arguments separately, and apply() takes the function arguments in an array.<br>
+
+       In JavaScript strict mode, the first argument becomes the value of this in the invoked function, even if the argument is not an object.<br>
+
+       In "non-strict" mode, if the value of the first argument is null or undefined, it is replaced with the global object.<br><br>
+
+       <i>With call() or apply() you can set the value of this, and invoke a function as a new method of an existing object.</i>
+      
+          </div>
+        </li> 
+
+       </ul>
+       </div>
+       </li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Closures</div>
+   <div class="collapsible-body white">
+         <p>JavaScript variables can belong to the <b>local</b> or <b>global</b> scope.<br>
+
+            Global variables can be made local (private) with <b>closures.</b>>
+
+    
+
+     
+
+
+       <ul class="collapsible" data-collapsible="accordion">
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Global Variables</div> 
+           <div class="collapsible-body white">
+            <p> A function can access all variables defined inside the function, like this:
+
+       <p style = "font-size: 30px"> Example 
+
+      <p style="margin-left: 20px"><b>function myFunction() {
+            <p style="margin-left: 30px">var a = 4; <br>
+                                        return a * a;
+            <p style="margin-left: 20px">}</b>
+
+
+
+
+            <p>But a function can also access variables defined <b>outside</b> the function, like this:
+            <p style = "font-size: 30px"> Example 
+
+            <p style="margin-left: 20px"><b>var a = 4;<br>
+                                         function myFunction() {
+            <p style="margin-left: 30px">return a * a;
+            <p style="margin-left: 20px">}</b>
+
+
+            <p>In the last example, <b>a</b> is a <b>global</b> variable.<br>
+
+               In a web page, global variables belong to the window object.<br>
+
+               Global variables can be used (and changed) by all scripts in the page (and in the window).<br>
+
+                In the first example, <b>a</b> is a <b>local</b> variable.<br>
+
+                A local variable can only be used inside the function where it is defined. It is hidden from other functions and other scripting code.<br>
+
+                Global and local variables with the same name are different variables. Modifying one, does not modify the other.<br>
+            
+               </div>
+      </li>
+
+
+
+      
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Variable Lifetime</div> 
+           <div class="collapsible-body white">
+            <p> Global variables live as long as your application (your window / your web page) lives.<br>
+
+                Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.<br>
+
+               </div>
+      </li>
+
+
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >A Counter Dilemma</div> 
+           <div class="collapsible-body white">
+
+     
+          <p > Suppose you want to use a variable for counting something, and you want this counter to be available to all functions. <br>
+
+              You could use a global variable, and a function to increase the counter:
+
+            <p style = "font-size: 20px">Example
+            <p style="margin-left: 20px"><b>var counter = 0;<br> 
+                                            function add() {
+            <p style="margin-left: 30px">counter += 1;
+            <p style="margin-left: 20px">}<br> 
+                                        add();<br> 
+                                        add();<br> 
+                                        add();<br><br></b> 
+                                        // the counter is now equal to 3
+           <p>The counter should only be changed by the add() function.<br>
+
+            The problem is, that any script on the page can change the counter, without calling add().<br>
+
+           If I declare the counter inside the function, nobody will be able to change it without calling add():<br>
+
+
+
+            <p style = "font-size: 20px">Example
+            <p style="margin-left: 20px"><b>function add() {
+            <p style="margin-left: 30px"> var counter = 0;<br>
+                                            counter += 1;
+
+            <p style="margin-left: 30px">counter += 1;
+            <p style="margin-left: 20px">}<br> 
+                                        add();<br> 
+                                        add();<br> 
+                                        add();<br><br></b> 
+                                       // the counter should now be 3, but it does not work !
+
+           </div>
+      </li>
+
+
+
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Nested Functions</div>
+       <div class="collapsible-body white">
+           <p>All functions have access to the global scope.  
+
+           In fact, in JavaScript, all functions have access to the scope "above" them.
+
+           JavaScript supports nested functions. Nested functions have access to the scope "above" them.
+
+           In this example, the inner function <b>plus()</b> has access to the <b>counter</b> variable in the parent function:
+
+
+            <p style = "font-size: 20px">Example
+            <p style="margin-left: 20px"><b>function add() { 
+            <p style="margin-left: 30px"> var counter = 0; <br>
+                                          function plus() {counter += 1;}<br>
+                                          plus();  <br>
+                                          return counter;
+
+            <p style="margin-left: 20px"> }</b>
+
+            <p>This could have solved the counter dilemma, if we could reach the <b>plus() </b> function from the <br>outside.
+
+            We also need to find a way to execute  <b>counter = 0  </b>only once. <br>
+
+            <b>We need a closure. <p></b>
+
+           
+           </div>
+       </li> 
+
+
+
+
+<li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Closures</div>
+       <div class="collapsible-body white">
+           <p>Remember self-invoking functions? What does this function do? 
+
+            <p style = "font-size: 20px">Example
+            <p style="margin-left: 20px"><b>var add = (function () {
+            <p style="margin-left: 30px"> var counter = 0;<br>
+                                          return function () {return counter += 1;}
+
+            <p style="margin-left: 20px">})(); <br>
+            
+            add();<br>
+            add();<br>
+            add();<br><br></b>
+
+            // the counter is now 3
+
+
+            <p style = "font-size: 20px">Example
+            <p>The variable <b>add</b> is assigned the return value of a self-invoking function.<br>
+
+              The self-invoking function only runs once. It sets the counter to zero (0), and returns a function expression.<br>
+
+              This way add becomes a function. The "wonderful" part is that it can access the counter in the parent scope.<br> 
+
+              This is called a JavaScript <b>closure</b> It makes it possible for a function to have <b>"private"</b> variables.<br>
+
+              The counter is protected by the scope of the anonymous function, and can only be changed using the add function.
+
+
+          </div>
+        </li> 
+
+       </ul>
+    
+
+    </div>
+ </li>
+
+
+</ul>
+
+      
+      
+
+  </div>
+</main>
+
+
+
+
+<hr>
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
