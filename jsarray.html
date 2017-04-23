@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+
+					  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+					  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+					  <title>Webtek</title>
+
+					  <!-- start of CSS links -->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+					  <!-- start of CSS links -->
+
+					 <style>
+
+							        body {
+							    display: flex;
+							    min-height: 100vh;
+							    flex-direction: column;
+							  }
+
+							  main {
+							    flex: 1 0 auto;
+							  }
+ 
+
+					  </style>
+		  </head>
+
+		  		<body bgcolor="#F1F8E0">
+
+
+
+
+  <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="" class="brand-logo "></a>
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
+
+
+
+  <ul id="slide-out" class="side-nav">
+
+ 
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    
+    <li><a class="waves-effect grey" href="index.html">HOME</a></li>
+    <li><a class="waves-effect grey" href="midterms.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect " href="gettingstarted.html">JS GETTING STARTED</a></li>
+    <li><a class="waves-effect" href="grammarandtypes.html">JS GRAMMAR AND TYPES</a></li>
+    <li><a class="waves-effect" href="jsfunctions.html">JS FUNCTIONS</a></li>
+    <li><a class="waves-effect" href="loopsiteration.html">JS LOOPS AND ITERATION</a></li>
+    <li><a class="waves-effect " href="cfandeh.html">JS CONTROL FLOW</a></li>
+    <li><a class="waves-effect" href="jsarray.html">JS ARRAY</a></li>
+
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+</div>
+
+<main>
+<div class="container">
+
+    
+      <ul class="collection">
+      <li class="collection-item" style = "  font-family: consolas; color:black;""><center><h3 style="background-color: grey">JS Array</h3></center></h3>
+      <br>
+      <p>The JavaScript Array object is a global object that is used in the construction of arrays; which are high-level, list-like objects.</p>
+      <p><b>Create an Array</b></p>
+      <img src="img/array/a1.png" alt="">
+      <p><b>Access (index into) an Array item</b></p>
+      <img src="img/array/a2.png" alt="">
+      <p><b>Loop over an Array</b></p>
+      <img src="img/array/a3.png" alt="">
+      <p><b>Add to the end of an Array</b></p>
+      <img src="img/array/a4.png" alt="">
+      <p><b>Remove from the end of an Array</b></p>
+      <img src="img/array/a5.png" alt="">
+      <p><b>Remove from the front of an Array</b></p>
+      <img src="img/array/a6.png" alt="">
+      <p><b>Add to the front of an Array</b></p>
+      <img src="img/array/a7.png" alt="">
+      <p><b>Find the index of an item in the Array</b></p>
+      <img src="img/array/a8.png" alt="">
+      <p><b>Remove an item by index position</b></p>
+      <img src="img/array/a9.png" alt="">
+      <p><b>Remove items from an index position</b></p>
+      <img src="img/array/a10.png" alt="">
+      <p><b>Copy an Array</b></p>
+      <img src="img/array/a11.png" alt="">
+      <hr>
+      <h5 align="center">Syntax</h5>
+      <img src="img/array/a12.png" alt="">
+      <p><b>Parameters</b></p>
+      <p>elementN</p>
+      <p>A JavaScript array is initialized with the given elements, except in the case where a single argument is passed to the Array constructor and that argument is a number (see the arrayLength parameter below). Note that this special case only applies to JavaScript arrays created with the Array constructor, not array literals created with the bracket syntax.</p>
+      <p>arrayLength</p>
+      <p>If the only argument passed to the Array constructor is an integer between 0 and 232-1 (inclusive), this returns a new JavaScript array with its length property set to that number (Note: this implies an array of arrayLength empty slots, not slots with actual undefined values). If the argument is any other number, a RangeError exception is thrown.</p>
+      <hr>
+      <h5 align="center">Description</h5>
+      <p>Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. Neither the length of a JavaScript array nor the types of its elements are fixed. Since an array's length can change at any time, and data can be stored at non-contiguous locations in the array, JavaScript arrays are not guaranteed to be dense; this depends on how the programmer chooses to use them. In general, these are convenient characteristics; but if these features are not desirable for your particular use, you might consider using typed arrays.</p>
+      <p><b>Accessing array elements</b></p>
+      <p>JavaScript arrays are zero-indexed: the first element of an array is at index 0, and the last element is at the index equal to the value of the array's length property minus 1.</p>
+      <p><b>Relationship between length and numerical properties</b></p>
+      <p>A JavaScript array's length property and numerical properties are connected. Several of the built-in array methods (e.g., join, slice, indexOf, etc.) take into account the value of an array's length property when they're called. Other methods (e.g., push, splice, etc.) also result in updates to an array's length property.</p>
+      <p><b>Creating an array using the result of a match</b></p>
+      <p>The result of a match between a regular expression and a string can create a JavaScript array. This array has properties and elements which provide information about the match. Such an array is returned by RegExp.exec, String.match, and String.replace. To help explain these properties and elements, look at the following example and then refer to the table below:</p>
+      <img src="img/array/a13.png" alt="">
+
+
+
+
+
+
+
+      </li>
+  
+
+    </ul>
+</div>
+
+
+</main>
+
+
+
+
+<hr>
+
+
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
