@@ -1,0 +1,461 @@
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>webtech</title>
+
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+      <style>
+
+                      body {
+                  display: flex;
+                  min-height: 100vh;
+                  flex-direction: column;
+                }
+
+                main {
+                  flex: 1 0 auto;
+                }
+ 
+
+            </style>
+    </head>
+    
+    <body bgcolor="#b3e5fc">
+      <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
+
+  <main>
+        
+        <div class="container">
+
+          <h1 class = "center" style = "  font-family: consolas; color:black; "> CASCADING STYLE SHEETS</h1>
+
+        
+         
+               
+              
+            <ul class="collapsible" data-collapsible="accordion">
+                
+
+
+
+                <li>
+                    <div class="collapsible-header" style="font-family: consolas;font-size: 20px" >CSS
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                    <li> - Stands for Cascading Style Sheets
+                     <br><br>
+                    <li> - Describes how HTML elements are to be dispayed on screen, paper, or in other media
+                     <br><br>
+                    <li> - Saves a lot of work. It can control the layout of multiple web pages all at once
+                     <br><br>
+                    <li> - External stylesheets are stored in CSS files
+                     <br><br>
+                    </div>
+                </li>
+
+
+
+
+                <li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">Syntax and Selectors
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> - A CSS rule set consists of a selector and a declaration block
+                       <br><br>
+                     <li> - The selector points to the HTML element you want to style
+                        <br><br>
+                     <li> - The declaration block contains one or more declarations seperated by semicolons
+                       <br><br>
+                     <li> - Each declaration includes a CSS property name and value, seperated by a colon
+                        <br><br>
+                     <li> - A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+
+
+
+
+                <li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Selectors
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+ 
+                       <li> The id selector
+ <p>- The id selector uses the id attribute of an HTML element to select a specific element. 
+The id of an element should be unique within a page, so the id selectors is used to select one unique element.
+To select an element with a specific id, write a hash (#) character, followed by the id of the element</p>
+                         <br><br>
+                       <li> The class selector
+<p> - The class selector selects elements with a specific class attribute.
+to select elements with a specific class, write a period (.) character, followed by the name of the clas </p>]
+                            <br><br>
+                     </ul>
+                    </div>
+                </li>
+
+
+
+
+                 <li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px"> CSS Comments
+                    </div>
+                    <div class="collapsible-body white">
+                    
+                    <ul>
+                    <li> - Comments are used to explain the code, and may help when you edit the source code at a later date.
+Comments are ignored by browsers. A CSS comment starts with /* and ends with */. Comments can also span multiple lines.
+                         <br><br>
+                        </ul>
+                    </div>
+                 </li>
+        
+                 <li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px"> 
+Three Ways to Insert CSS
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul >
+                    <li> External Style sheet
+<p> - With an external style sheet, you can change the look of an entire website by changing just one file. 
+Each page must include a referene to the external style sheet file inside the < link > element. The < link > element goes
+inside the < head > section. An external style sheet can be written in any text editor. The file should not contain any html tags. The style sheet
+file must be saved with a .css extension </p>
+                         <br><br>
+                    <li> Internal Style sheet
+ <p>- An internal style sheet may be used if one single page has a unique style. 
+Interal styles are defined within the < style > element, inside the < head > section of an HTML page</p>
+                            <br><br>
+                    <li> Inline Styles
+ <p>- An inline style may be used to apply a unique style for a single element.
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property </p>
+                          <br><br>
+                        </ul>
+                    </div>
+                 </li>
+				 
+				 
+				 <li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Colors
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> - Colors in CSS are most often specified by: 
+<br>> a valid color name -- like "red"
+<br>> an RGB value -- like "rgb(255,0,0)"
+<br>> a HEX value -- like "#ff0000"
+                       <br><br>
+                     <li> Hexadecimal Colors
+<p> - RGB values can also be specified using hexadecimal color values in the form: #RRGGBB, where RR (red),
+GG (green) and BB (blue) are hexadecimal values between 00 and FF (same as decimal 0-255).
+For example, #FF0000 is displayed as red, because red is set to its highest value (FF) and the others are set to the lowest value (00) </p>
+                        <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Background
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> - background-color
+                       <br><br>
+                     <li> - background-image
+                        <br><br>
+                     <li> - background-repeat
+                       <br><br>
+                     <li> - background-attachment
+                        <br><br>
+                     <li> - background-position
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Boarder
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> dotted - Defines a dotted border
+                       <br><br>
+                     <li> dashed - Defines a dashed border
+                        <br><br>
+                     <li> solid - Defines a solid border
+                       <br><br>
+                     <li> double - Defines a double border
+                        <br><br>
+                     <li> groove - Defines a 3D grooved border. The effect depends on the border-color value
+                       <br><br>
+					  <li> ridge - Defines a 3D ridged border. The effect depends on the border-color value
+                       <br><br>
+					  <li> inset - Defines a 3D inset border. The effect depends on the border-color value
+                       <br><br>
+					  <li> outset - Defines a 3D outset border. The effect depends on the border-color value
+                       <br><br>
+					  <li> none - Defines no border
+                       <br><br>
+					  <li> hidden - Defines a hidden border
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Margins
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> -  The CSS margin properties are used to generate space around element it sets the size of the white space outside the border
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Padding
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> <p>- The CSS padding properties are used to generate space around content.
+The padding clears an area around the content (inside the border) of an element.
+With CSS, you have full control over the padding. There are CSS properties for setting 
+the padding for each side of an element (top, right, bottom, and left)</p>
+
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Text
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> - Text Color
+                       <br><br>
+                     <li> - Text Alignment
+                        <br><br>
+                     <li> - Text Decoration
+                       <br><br>
+                     <li> - Text Transformation
+                        <br><br>
+                     <li> - Text Indentation
+                       <br><br>
+					 <li> - Text Direction
+                       <br><br>
+					 <li> - Word Spacing
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Font
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> - font-family
+                       <br><br>
+                     <li> - font-size
+                        <br><br>
+                     <li> - font-style
+                       <br><br>
+                     <li> - font-weight 
+                        <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				
+				
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS List
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> - list-style
+                       <br><br>
+                     <li> - list-style-image
+                        <br><br>
+                     <li> - list-style-position
+                       <br><br>
+                     <li> - list-style-type
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				
+				
+					
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Pseudo-classes
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> :active	
+                       <br><br>
+                     <li> :checked
+                        <br><br>
+                     <li> :disabled
+                       <br><br>
+                     <li> :empty
+                        <br><br>
+                     <li> :enabled
+                       <br><br>
+					 <li> :first-child
+                       <br><br>
+					<li> :first-of-type
+                       <br><br>
+				    <li> :focus
+                       <br><br>
+				    <li> :hover
+                       <br><br>
+					<li> :in-range
+                       <br><br>
+					<li> :invalid
+                       <br><br>
+					    <li> :lang
+                       <br><br>
+					    <li> :last-child
+                       <br><br>
+					    <li> :last-of-type
+                       <br><br>
+					    <li> :link
+                       <br><br>
+					    <li> :nth-child(n)
+                       <br><br>
+					    <li> :nth-last-child(n)
+                       <br><br>
+					    <li> :nth-of-type(n)
+                       <br><br>
+					    <li> :only-child
+                       <br><br>
+					    <li> :optional
+                       <br><br>
+					    <li> :out-of-range
+                       <br><br>
+					    <li> :read-only
+                       <br><br>
+					    <li> :read-write
+                       <br><br>
+					    <li> :required
+                       <br><br>
+					    <li> :root
+                       <br><br>
+					    <li> :target
+                       <br><br>
+					    <li> :valid
+                       <br><br>
+					   
+                       </ul>
+                    </div>
+                </li>
+				
+				
+				
+				
+				
+				
+					
+				<li>
+                    <div class="collapsible-header" style="font-family: consolas; font-size: 20px">CSS Pseudo Elements
+
+                    </div>
+                    <div class="collapsible-body white">
+                    <ul>
+                   
+                     <li> ::after	
+                       <br><br>
+                     <li> ::before
+                        <br><br>
+                     <li> ::first-letter
+                       <br><br>
+                     <li> ::first-line
+                        <br><br>
+                     <li> ::selection
+                       <br><br>
+                       </ul>
+                    </div>
+                </li>
+				
+			
+				
+        </div>
+
+        </main>
+        
+    <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+           <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+        
+ 
+    </body>
+
+</html>
