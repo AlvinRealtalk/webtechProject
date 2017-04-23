@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+
+					  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+					  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+					  <title>Webtek</title>
+
+					  <!-- start of CSS links -->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+					  <!-- start of CSS links -->
+
+					 <style>
+
+							        body {
+							    display: flex;
+							    min-height: 100vh;
+							    flex-direction: column;
+							  }
+
+							  main {
+							    flex: 1 0 auto;
+							  }
+ 
+
+					  </style>
+		  </head>
+
+		  		<body bgcolor="#F1F8E0">
+
+
+
+
+  <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="" class="brand-logo "></a>
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
+
+
+
+  <ul id="slide-out" class="side-nav">
+
+ 
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    
+    <li><a class="waves-effect grey" href="index.html">HOME</a></li>
+    <li><a class="waves-effect grey" href="midterms.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect " href="gettingstarted.html">JS GETTING STARTED</a></li>
+    <li><a class="waves-effect" href="grammarandtypes.html">JS GRAMMAR AND TYPES</a></li>
+    <li><a class="waves-effect" href="jsfunctions.html">JS FUNCTIONS</a></li>
+    <li><a class="waves-effect" href="loopsiteration.html">JS LOOPS AND ITERATION</a></li>
+    <li><a class="waves-effect " href="cfandeh.html">JS CONTROL FLOW</a></li>
+    <li><a class="waves-effect" href="jsarray.html">JS ARRAY</a></li>
+
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+</div>
+
+<main>
+<div class="container">
+
+    
+      <ul class="collection">
+      <li class="collection-item" style = "  font-family: consolas; color:black;""><center><h3 style="background-color: grey">Control flow and error handling</h3></center></h3>
+      <br>
+      <h5 align="center">Block statement</h5>
+      <p>The most basic statement is a block statement that is used to group statements. The block is delimited by a pair of curly brackets:</p>
+      <img src="img/cfandeh/c1.png" alt="">
+      <p><b>Important:</b> JavaScript prior to ECMAScript2015 does not have block scope. Variables introduced within a block are scoped to the containing function or script, and the effects of setting them persist beyond the block itself. In other words, block statements do not define a scope. "Standalone" blocks in JavaScript can produce completely different results from what they would produce in C or Java. For example:</p>
+      <img src="img/cfandeh/c2.png" alt="">
+      <hr>
+      <h5 align="center">Conditional statements</h5>
+      <p>A conditional statement is a set of commands that executes if a specified condition is true. JavaScript supports two conditional statements: if...else and switch.</p>
+      <p><b>if...else statement</b></p>
+      <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
+      <img src="img/cfandeh/c3.png" alt="">
+      <p><b>switch statement</b></p>
+      <p>A switch statement allows a program to evaluate an expression and attempt to match the expression's value to a case label. If a match is found, the program executes the associated statement. A switch statement looks as follows:</p>
+      <img src="img/cfandeh/c4.png" alt="">
+      <hr>
+      <h5 align="center">Exception handling statements</h5>
+      <p>You can throw exceptions using the throw statement and handle them using the try...catch statements.</p>
+      <ul>
+        <li>throw statement</li>
+        <li>try...catch statement</li>
+      </ul>
+      <p><b>Exception types</b></p>
+      <p>Just about any object can be thrown in JavaScript. Nevertheless, not all thrown objects are created equal. While it is fairly common to throw numbers or strings as errors it is frequently more effective to use one of the exception types</p>
+      <p><b>throw statement</b></p>
+      <p>Use the throw statement to throw an exception. When you throw an exception, you specify the expression containing the value to be thrown:</p>
+      <img src="img/cfandeh/c5.png" alt="">
+      <p><b>try...catch statement</b></p>
+      <p>The try...catch statement marks a block of statements to try, and specifies one or more responses should an exception be thrown. If an exception is thrown, the try...catch statement catches it.</p>
+      <p><b>Utilizing Error objects</b></p>
+      <p>Depending on the type of error, you may be able to use the 'name' and 'message' properties to get a more refined message. 'name' provides the general class of Error (e.g., 'DOMException' or 'Error'), while 'message' generally provides a more succinct message than one would get by converting the error object to a string.</p>
+
+
+
+
+
+
+
+
+      </li>
+  
+
+    </ul>
+</div>
+
+
+</main>
+
+
+
+
+<hr>
+
+
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
