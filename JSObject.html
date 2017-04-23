@@ -1,0 +1,427 @@
+<html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+      <title>webtech</title>
+
+      <!-- CSS  -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <style>
+
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+             }
+
+            main {
+                flex: 1 0 auto;
+            }
+ 
+
+     </style>
+    </head>
+    
+<body bgcolor="#b3e5fc">
+<main>
+<div class="container">
+
+
+     <center>     <h1 style="background-color: grey">JS Object</h1></center>         
+
+      <ul class="collection">
+      <li class="collection-item" style = "  font-family: consolas; color:black;""><center><h3 style="background-color: grey">JS OBject Definition</h3></center>
+      <br>
+      <p>In JavaScript, almost "everything" is an object.
+       <ul>
+        <li>• Booleans can be objects (if defined with the new keyword) </li>
+        <li>• Numbers can be objects (if defined with the new keyword)</li>
+        <li>• Strings can be objects (if defined with the new keyword)</li>
+        <li>• Dates are always objects</li>
+        <li>• Maths are always objects</li>
+        <li>• Regular expressions are always objects</li>
+        <li>• Arrays are always objects</li>
+        <li>• Functions are always objects</li>
+        <li>• Objects are always objects</li>
+        </ul>
+        <p>All JavaScript values, except primitives, are objects. </p>
+      </li>
+      </ul>
+
+
+
+
+
+ <ul class="collapsible" data-collapsible="accordion">
+
+
+
+
+   <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Object Properties</div>
+   <div class="collapsible-body white">
+          <p>Properties are the values associated with a JavaScript object.
+            A JavaScript object is a collection of unordered properties.
+            Properties can usually be changed, added, and deleted, but some are read only.
+
+    
+
+
+     <ul class="collapsible" data-collapsible="accordion">
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Accessing JavaScript Properties</div> 
+           <div class="collapsible-body white">
+           <p style = "font-size: 20px">The syntax for accessing the property of an object is:
+          <br>
+          <p style="margin-left: 30px"><b> objectName.property  </b>        // person.age
+          <p style="margin-left: 30px"> <b>objectName["property"]  </b>     // person["age"]
+          <p style="margin-left: 30px"> <b>objectName[expression]  </b>     // x = "age"; person[x]
+           </div>
+      </li>
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript for...in LoopJavaScript Properties</div>
+       <div class="collapsible-body white">
+           <p>The JavaScript for...in statement loops through the properties of an object.
+           <p style = "font-size: 20px">Syntax
+           <p><b> for (variable in object) { <br>
+           <p style="margin-left: 20px">   code to be executed<br>
+           <p>   }</b><br>
+            The block of code inside of the for...in loop will be executed once for each property.<br>
+            Looping through the properties of an object:
+           </div>
+       </li> 
+
+
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Adding New Properties</div>
+        <div class="collapsible-body white">
+        <p>You can add new properties to an existing object by simply giving it a value.
+        Assume that the person object already exists - you can then give it new properties:
+        
+        <p style = "font-size: 20px">Example:
+        <p><b>person.nationality = "English";</b>
+          </div>
+        </li> 
+
+
+        
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Deleting Properties</div>
+        <div class="collapsible-body white">
+        <p>The delete keyword deletes a property from an object:
+        
+        <p style = "font-size: 20px">Example:
+        <p>var person = {firstName:"John", lastName:"Doe", age:50,<br> 
+           eyeColor:"blue"}; <br>
+           <b>delete person.age; </b>   // or delete person["age"]; <br>
+        <p>The delete keyword deletes both the value of the property and the property itself.<br>
+          After deletion, the property cannot be used before it is added back again.<br>
+          The delete operator is designed to be used on object properties. It has no effect on variables or functions.<br>
+          The delete operator should not be used on predefined JavaScript object properties. It can crash your application.
+          </div>
+        </li> 
+
+         
+
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Property Attributes</div>
+        <div class="collapsible-body white">
+        <p>All properties have a name. In addition they also have a value.<br>
+           The value is one of the property's attributes.<br>
+          Other attributes are:<b>enumerable, configurable, and writable.</b><br>
+          These attributes define how the property can be accessed (is it readable?, is it writable?)<br>
+          In JavaScript, all attributes can be read, but only the value attribute can be changed (and only if the property is writable). <br>      
+          ( ECMAScript 5 has methods for both getting and setting all property attributes)
+          </div> 
+        </li>
+
+        
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Prototype Properties</div>
+        <div class="collapsible-body white">
+        <p>JavaScript objects inherit the properties of their prototype.<br> 
+
+          The delete keyword does not delete inherited properties, but if you delete a prototype property, it will affect all objects inherited from the prototype.
+          </div> 
+        </li>
+
+       
+       </ul>
+       </div>
+       </li>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+   <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Object Methods
+   </div>
+   <div class="collapsible-body white">
+          <p>JavaScript methods are the actions that can be performed on objects.
+                         A JavaScript <b>method</b> is a property containing a <b>function definition.</b>
+           <p style="margin-left: 30px"><b>Property &emsp; &emsp; &ensp; Value</b><br>
+           firstName &emsp; &emsp;John<br>
+           lastName  &emsp; &emsp;Doe<br>
+           age &emsp; &emsp; &emsp; &emsp;50<br>
+           eyeColor &emsp; &emsp;blue<br>
+           fullName  function() {return this.firstName + " " + this.lastName;}<br><br>
+           <p>Methods are functions stored as object properties.<br>
+
+    
+
+     <ul class="collapsible" data-collapsible="accordion">
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Accessing Object Methods</div> 
+           <div class="collapsible-body white">
+           <p>You create an object method with the following syntax:
+          <br>
+          <p style="margin-left: 30px"><b>methodName : function() { code lines } </b>   
+
+           <p>You access an object method with the following syntax:
+          <p style="margin-left: 30px"> <b>objectName.methodName() </b> 
+
+          <p> You will typically describe fullName() as a method of the person object, and fullName as a property.<br>
+          The fullName property will execute (as a function) when it is invoked with ().<br>
+           This example accesses the fullName() method of a person object:<br><br>
+           <p style = "font-size: 20px">Example
+           <p style="margin-left: 30px"> <b>objectName.methodName() </b> 
+           </div>
+      </li>
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Using Built-In Methods</div>
+       <div class="collapsible-body white">
+           <p>This example uses the toUpperCase() method of the String object, to convert a text to uppercase:
+           <p style="margin-left: 30px"> <b>var message = "Hello world!";<br> 
+           var x = message.toUpperCase(); </b> 
+           <p>The value of x, after execution of the code above will be:
+           <p style="margin-left: 30px"> <b>HELLO WORLD!</b> 
+           </div>
+       </li> 
+
+
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Adding New Methods</div>
+        <div class="collapsible-body white">
+        <p>Adding methods to an object is done inside the constructor function:
+        
+        <p style = "font-size: 20px">Example
+        <p style="margin-left: 20px" ><b>function person(firstName, lastName, age, eyeColor) {
+        <p style="margin-left: 30px" >           this.firstName = firstName;<br> 
+                    this.lastName = lastName;<br> 
+                    this.age = age;<br> 
+                    this.eyeColor = eyeColor;<br> 
+                    this.changeName = function (name) { 
+         <p style="margin-left: 40px">           this.lastName = name;<br> 
+                  }; 
+         <p style="margin-left: 20px">      }</b>
+
+         <p>The changeName() function assigns the value of name to the person's lastName property.
+          </div> 
+        </li> 
+
+
+       </ul>
+       </div>
+       </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Object Prototypes
+   </div>
+   <div class="collapsible-body white">
+          <p>Every JavaScript object has a prototype. The prototype is also an object. <br>
+          All JavaScript objects inherit their properties and methods from their prototype.
+
+   
+   <ul class="collapsible" data-collapsible="accordion">
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >JavaScript Prototypes</div> 
+           <div class="collapsible-body white">
+           <p> All JavaScript objects inherit the properties and methods from their prototype. <br>
+                Objects created using an object literal, or with new Object(), inherit from a prototype called Object.prototype.<br>
+                Objects created with new Date() inherit the Date.prototype.<br>
+                The Object.prototype is on the top of the prototype chain.<br>
+                All JavaScript objects (Date, Array, RegExp, Function, ....) inherit from the Object.prototype.<br>
+           </div>
+      </li>
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Creating a Prototype</div>
+       <div class="collapsible-body white">
+           <p> The standard way to create an object prototype is to use an object constructor function:
+          <p style = "font-size: 20px">Example
+
+        <p style="margin-left: 20px" ><b>function Person(first, last, age, eyecolor) {
+        <p style="margin-left: 30px" > this.firstName = first; <br>
+                           this.lastName = last; <br>
+                           this.age = age; <br>
+                           this.eyeColor = eyecolor; <br>
+         <p style="margin-left: 20px"> } </b>
+
+         <p>With a constructor function, you can use the new keyword to create new objects from the same prototype:
+
+         <p style = "font-size: 20px">Example
+
+         <p style="margin-left: 30px"><b>var myFather = new Person("John", "Doe", 50, "blue"); <br>
+               var myMother = new Person("Sally", "Rally", 48, "green");</b>
+           </div>
+       </li> 
+
+
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Adding Properties and Methods to Objects</div>
+        <div class="collapsible-body white">
+        <p> Sometimes you want to add new properties (or methods) to an existing object.<br>
+
+        Sometimes you want to add new properties (or methods) to all existing objects of a given type.<br>
+
+        Sometimes you want to add new properties (or methods) to an object prototype.
+         </div>
+        </li>
+
+
+         <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Adding a Property to an Object</div>
+        <div class="collapsible-body white">
+        <p>Adding a new property to an existing object is easy:
+        <p style = "font-size: 20px">Example
+        <p style="margin-left: 30px"><b>myFather.nationality = "English";</b>
+
+        </div>
+        </li>
+
+
+
+
+      <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Adding a Method to an Object</div>
+        <div class="collapsible-body white">
+        <p>Adding a new method to an existing object is also easy:
+        <p style = "font-size: 20px">Example
+        <p style="margin-left: 20px"><b>myFather.name = function () { <br>
+        <p style="margin-left: 40px">return this.firstName + " " + this.lastName;
+        <p style="margin-left: 20px"></b>};
+
+        </div>
+        </li>
+
+        <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Adding Properties to a Prototype</div>
+
+        <div class="collapsible-body white">
+        <p>You cannot add a new property to a prototype the same way as you add a new <br> property to an existing object, because the prototype is not an existing object.
+        <p style = "font-size: 20px">Example
+        <p style="margin-left: 30px"><b>Person.nationality = "English";</b><br>
+        <p>To add a new property to a prototype, you must add it to the constructor function:
+        <p style = "font-size: 20px">Example
+        <p style="margin-left: 20px"><b>function Person(first, last, age, eyecolor) {
+        <p style="margin-left: 30px">this.firstName = first;<br>
+                  this.lastName = last; <br>
+                  this.age = age; <br>
+                  this.eyeColor = eyecolor; <br>
+                  this.nationality = "English";
+        <p style="margin-left: 20px">};</b>
+        </div>
+        </li>
+     
+
+
+
+
+     <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Adding Methods to a Prototype</div>
+
+        <div class="collapsible-body white">
+        <p>Your constructor function can also define methods:
+        <p style = "font-size: 20px">Example
+        <p style="margin-left: 20px"><b>function Person(first, last, age, eyecolor) {
+        <p style="margin-left: 30px">this.firstName = first;<br>
+                  this.lastName = last; <br>
+                  this.age = age; <br>
+                  this.eyeColor = eyecolor; <br>
+                  this.name = function() {return this.firstName + " " + this.lastName;};
+        <p style="margin-left: 20px">}</b>
+        </div>
+        </li>
+
+
+
+       <li><div class="collapsible-header" style="font-family: consolas;font-size: 20px" >Using the prototype Property</div>
+
+        <div class="collapsible-body white">
+        <p>The JavaScript prototype property allows you to add new properties to an existing prototype:
+        <p style = "font-size: 20px">Example
+        <p style="margin-left: 20px"><b>function Person(first, last, age, eyecolor) {
+        <p style="margin-left: 30px">this.firstName = first;<br>
+                  this.lastName = last; <br>
+                  this.age = age; <br>
+                  this.eyeColor = eyecolor; <br>
+        <p style="margin-left: 20px">}<br>
+                  Person.prototype.nationality = "English"; </b>
+        
+        </div>
+        </li>
+
+      </ul>
+
+
+
+    </div>
+ </li>
+
+
+
+</ul>
+
+      
+      
+
+  </div>
+</main>
+
+
+
+
+<hr>
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
