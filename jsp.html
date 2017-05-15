@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+
+					  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+					  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+					  <title>Webtek</title>
+
+					  <!-- start of CSS links -->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+					  <!-- start of CSS links -->
+
+					 <style>
+
+							        body {
+							    display: flex;
+							    min-height: 100vh;
+							    flex-direction: column;
+							  }
+
+							  main {
+							    flex: 1 0 auto;
+							  }
+ 
+
+					  </style>
+		  </head>
+
+		  		<body bgcolor="#ffab91">
+
+
+
+
+  <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
+
+
+
+  <ul id="slide-out" class="side-nav">
+
+    
+ 
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    
+    <li><a class="waves-effect grey" href="index.html">HOME</a></li>
+    <li><a class="waves-effect grey" href="finals.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect " href="jsp.html">JSP</a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect " href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+</div>
+
+<main>
+
+<center><img src="img/jspicon.png" alt="Mountain View" style="width:200px;height:200px;"></center>
+
+<div class="container ">
+<ul class="collection">
+     <li class="collection-item"><h3 class="center grey lighten-1" style = "  font-family: consolas; color:black; ">JavaServer Pages</h3>
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+<ul class="collection">
+     <ul id="tabs-swipe-demo" class="tabs" align="center">
+    
+
+    <li class="tab col s3"><a class="active" href="#test-swipe-1">Architecture</a></li>
+    <li class="tab col s3"><a href="#test-swipe-2">Lifecycle</a></li>
+    <li class="tab col s3"><a href="#test-swipe-3">Syntax</a></li>
+    <li class="tab col s3"><a href="#test-swipe-4">Directives</a></li>
+    <li class="tab col s3"><a href="#test-swipe-5">Actions</a></li>
+    <li class="tab col s3"><a href="#test-swipe-6">Objects</a></li>
+    <li class="tab col s3"><a href="#test-swipe-7">Client/Server</a></li>
+
+  </ul>
+  <div id="test-swipe-1" class="col s12 white">
+
+  <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Architecture</h3>
+  <p>The web server needs a JSP engine, i.e, a container to process JSP pages. The JSP container is responsible for intercepting requests for JSP pages. This tutorial makes use of Apache which has built-in JSP container to support JSP pages development.</p>
+  
+  <p>A JSP container works with the Web server to provide the runtime environment and other services a JSP needs. It knows how to understand the special elements that are part of JSPs.</p>
+  
+  <p>Following diagram shows the position of JSP container and JSP files in a Web application.</p>
+
+  <center><img src="img/jsp/f1.jpg" alt="" style="width:450px;height:200px;"></center>
+  <br>
+  <h4>JSP Processing</h4>
+  <p>The following steps explain how the web server creates the Webpage using JSP</p>
+  <ol>
+    <li>- As with a normal page, your browser sends an HTTP request to the web server.</li>
+    <br>
+    <li>-The web server recognizes that the HTTP request is for a JSP page and forwards it to a JSP engine. This is done by using the URL or JSP page which ends with .jsp instead of .html.</li>
+    <br>
+    <li>- The JSP engine loads the JSP page from disk and converts it into a servlet content. This conversion is very simple in which all template text is converted to println( ) statements and all JSP elements are converted to Java code. This code implements the corresponding dynamic behavior of the page.</li>
+    <br>
+    <li>- The JSP engine compiles the servlet into an executable class and forwards the original request to a servlet engine.</li>
+    <br>
+    <li>- A part of the web server called the servlet engine loads the Servlet class and executes it. During execution, the servlet produces an output in HTML format. The output is furthur passed on to the web server by the servlet engine inside an HTTP response.</li>
+    <br>
+    <li>- The web server forwards the HTTP response to your browser in terms of static HTML content.</li>
+    <br>
+    <li>- Finally, the web browser handles the dynamically-generated HTML page inside the HTTP response exactly as if it were a static page.</li>
+  </ol>
+  <br>
+  <p>All the above mentioned steps can be seen in the following diagram.</p>
+  <center><img src="img/jsp/f2.jpg" alt="" style="width:450px;height:200px;"></center>
+  <br>
+  <p>Typically, the JSP engine checks to see whether a servlet for a JSP file already exists and whether the modification date on the JSP is older than the servlet. If the JSP is older than its generated servlet, the JSP container assumes that the JSP hasn't changed and that the generated servlet still matches the JSP's contents. This makes the process more efficient than with the other scripting languages (such as PHP) and therefore faster.</p>
+  <br>
+  <p>So in a way, a JSP page is really just another way to write a servlet without having to be a Java programming wiz. Except for the translation phase, a JSP page is handled exactly like a regular servlet.</p>
+
+
+  <h3 class="center grey lighten-1" style = "  font-family: consolas; color:black; "></h3>
+
+  </div>
+
+  <div id="test-swipe-2" class="col s12 white">
+    <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Lifecycle</h3>
+    <p>A JSP life cycle is defined as the process from its creation till the destruction. This is similar to a servlet life cycle with an additional step which is required to compile a JSP into servlet.</p>
+    <br>
+    <h4>Paths Followed By JSP</h4>
+    <p>The following are the paths followed by a JSP −</p>
+    <ul>
+      <li>- Compilation</li>.
+      <li>- Initialization</li>
+      <li>- Execution</li>
+      <li>- Cleanup</li>
+    </ul>
+    <br>
+    <p>The four major phases of a JSP life cycle are very similar to the Servlet Life Cycle. The four phases have been described below −</p>
+    <center><img src="img/jsp/f3.jpg" alt="" style="width:450px;height:250px;"></center>
+    <br>
+    <h4>JSP Compilation</h4>
+    <p>When a browser asks for a JSP, the JSP engine first checks to see whether it needs to compile the page. If the page has never been compiled, or if the JSP has been modified since it was last compiled, the JSP engine compiles the page.</p>
+    <br>
+    <p>The compilation process involves three steps −</p>
+    <ul>
+      <li>- Parsing the JSP.</li>
+      <li>- Turning the JSP into a servlet.</li>
+      <li>- Compiling the servlet.</li>
+    </ul>
+    <br>
+    <h4>JSP Initialization</h4>
+    <p>When a container loads a JSP it invokes the jspInit() method before servicing any requests. If you need to perform JSP-specific initialization, override the jspInit() method −</p>
+    <center><img src="img/jsp/f4.png"></center>
+    <p>Typically, initialization is performed only once and as with the servlet init method, you generally initialize database connections, open files, and create lookup tables in the jspInit method.</p>
+    <h4>JSP Execution</h4>
+    <p>This phase of the JSP life cycle represents all interactions with requests until the JSP is destroyed.</p>
+    <br>
+    <p>Whenever a browser requests a JSP and the page has been loaded and initialized, the JSP engine invokes the _jspService() method in the JSP.</p>
+    <br>
+    <p>The _jspService() method takes an HttpServletRequest and an HttpServletResponse as its parameters as follows −</p>
+    <center><img src="img/jsp/f5.png" "></center>
+    <br>
+    <p>The _jspService() method of a JSP is invoked on request basis. This is responsible for generating the response for that request and this method is also responsible for generating responses to all seven of the HTTP methods, i.e, GET, POST, DELETE, etc.</p>
+    <h4>JSP Cleanup</h4>
+    <p>The destruction phase of the JSP life cycle represents when a JSP is being removed from use by a container.</p>
+    <br>
+    <p>The jspDestroy() method is the JSP equivalent of the destroy method for servlets. Override jspDestroy when you need to perform any cleanup, such as releasing database connections or closing open files.</p>
+    <br>
+    <p>The jspDestroy() method has the following form −</p>
+    <center><img src="img/jsp/f6.png" "></center>
+  </div>
+
+
+
+  <div id="test-swipe-3" class="col s12 white">
+    <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Syntax</h3>
+    <h4>Elements of JSP</h4>
+    <p>The elements of JSP have been described below −</p>
+    <h5>The Scriptlet</h5>
+    <p>A scriptlet can contain any number of JAVA language statements, variable or method declarations, or expressions that are valid in the page scripting language.</p>
+    
+    <p>Following is the syntax of Scriptlet −</p>
+    <center><img src="img/jsp/f7.png" "></center>
+    <p>You can write the XML equivalent of the above syntax as follows −</p>
+    <center><img src="img/jsp/f8.png" "></center>
+    <p>Any text, HTML tags, or JSP elements you write must be outside the scriptlet. Following is the simple and first example for JSP −</p>
+    <center><img src="img/jsp/f9.png" "></center>
+    <p>NOTE − Assuming that Apache Tomcat is installed in C:\apache-tomcat-7.0.2 and your environment is setup as per environment setup tutorial.</p>
+    <h5>JSP Declarations</h5>
+    <p>A declaration declares one or more variables or methods that you can use in Java code later in the JSP file. You must declare the variable or method before you use it in the JSP file.</p>
+    
+    <p>Following is the syntax for JSP Declarations −</p>
+    <center><img src="img/jsp/f10.png" "></center>
+    <p>You can write the XML equivalent of the above syntax as follows −</p>
+    <center><img src="img/jsp/f11.png" "></center>
+    <p>Following is an example for JSP Declarations −</p>
+    <center><img src="img/jsp/f12.png" "></center>
+    <br>
+    <h5>JSP Expression</h5>
+    <p>A JSP expression element contains a scripting language expression that is evaluated, converted to a String, and inserted where the expression appears in the JSP file.</p>
+    
+    <p>Because the value of an expression is converted to a String, you can use an expression within a line of text, whether or not it is tagged with HTML, in a JSP file.</p>
+    
+    <p>The expression element can contain any expression that is valid according to the Java Language Specification but you cannot use a semicolon to end an expression.</p>
+    
+    <p>Following is the syntax of JSP Expression −</p>
+    <center><img src="img/jsp/f13.png" "></center>
+    <p>You can write the XML equivalent of the above syntax as follows −</p>
+    <center><img src="img/jsp/f14.png" "></center>
+    <p>Following example shows a JSP Expression −</p>
+    <center><img src="img/jsp/f15.png" "></center>
+    <p>The above code will generate the following result −</p>
+    <center><img src="img/jsp/f16.png" "></center>
+    <h5>JSP Comments</h5>
+    <p>JSP comment marks text or statements that the JSP container should ignore. A JSP comment is useful when you want to hide or "comment out", a part of your JSP page.</p>
+    
+    <p>Following is the syntax of the JSP comments −</p>
+    <center><img src="img/jsp/f17.png" "></center>
+    <p>Following example shows the JSP Comments −</p>
+    <center><img src="img/jsp/f18.png" "></center>
+    <p>The above code will generate the following result −</p>
+    <center><img src="img/jsp/f19.png" "></center>
+    <p>There are a small number of special constructs you can use in various cases to insert comments or characters that would otherwise be treated specially. Here's a summary −</p>
+
+    <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Syntax & Purpose</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+            <p><%-- comment --%></p> 
+            <p>A JSP comment. Ignored by the JSP engine.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+            <p>< !-- comment --></p>
+            <p>An HTML comment. Ignored by the browser.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+            <p><\%</p>
+            <p>Represents static <% literal.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+            <p>%\></p>
+            <p>Represents static %> literal.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+            <p>\'</p>
+            <p>A single quote in an attribute that uses single quotes.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+            <p>\"</p>
+            <p>A double quote in an attribute that uses double quotes.</p>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+
+
+      <br>
+      <h5>JSP Directives</h5>
+      <p>A JSP directive affects the overall structure of the servlet class. It usually has the following form −</p>
+      <center><img src="img/jsp/f20.png" "></center>
+      <p>There are three types of directive tag −</p>
+
+      <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Directive & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+            <p><%@ page ... %></p> 
+            <p>Defines page-dependent attributes, such as scripting language, error page, and buffering requirements.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+            <p><%@ include ... %></p>
+            <p>Includes a file during the translation phase.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+            <p><%@ taglib ... %></p>
+            <p>Declares a tag library, containing custom actions, used in the page</p>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h5>JSP Actions</h5>
+      <p>JSP actions use constructs in XML syntax to control the behavior of the servlet engine. You can dynamically insert a file, reuse JavaBeans components, forward the user to another page, or generate HTML for the Java plugin.</p>
+      <p>There is only one syntax for the Action element, as it conforms to the XML standard −</p>
+      <center><img src="img/jsp/f21.png" "></center>
+      <p>Action elements are basically predefined functions. Following table lists out the available JSP Actions −</p>
+
+      <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Syntax & Purpose</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+            <p>jsp:include</p> 
+            <p>Includes a file at the time the page is requested.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+            <p>jsp:useBean</p>
+            <p>Finds or instantiates a JavaBean.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+            <p>jsp:setProperty</p>
+            <p>Sets the property of a JavaBean.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+            <p>jsp:getProperty</p>
+            <p>Inserts the property of a JavaBean into the output.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+            <p>jsp:forward</p>
+            <p>Forwards the requester to a new page.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+            <p>jsp:plugin</p>
+            <p>Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+            <p>jsp:element</p>
+            <p>Defines XML elements dynamically.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+            <p>jsp:attribute</p>
+            <p>Defines dynamically-defined XML element's attribute.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+            <p>jsp:body</p>
+            <p>Defines dynamically-defined XML element's body.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+            <p>jsp:text</p>
+            <p>Used to write template text in JSP pages and documents.</p>
+            </td>
+            
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <h5>JSP Implicit Objects</h5>
+      <p>JSP supports nine automatically defined variables, which are also called implicit objects. These variables are −</p>
+
+      <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Syntax & Purpose</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+            <p>request</p> 
+            <p>This is the HttpServletRequest object associated with the request.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+            <p>response</p>
+            <p>This is the HttpServletResponse object associated with the response to the client.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+            <p>out</p>
+            <p>This is the PrintWriter object used to send output to the client.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+            <p>session</p>
+            <p>This is the HttpSession object associated with the request.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+            <p>application</p>
+            <p>This is the ServletContext object associated with the application context.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+            <p>config</p>
+            <p>This is the ServletConfig object associated with the page.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+            <p>pageContext</p>
+            <p>This encapsulates use of server-specific features like higher performance JspWriters.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+            <p>page</p>
+            <p>This is simply a synonym for this, and is used to call the methods defined by the translated servlet class.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+            <p>Exception</p>
+            <p>The Exception object allows the exception data to be accessed by designated JSP.</p>
+            </td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+      <br>
+      <h5>Control-Flow Statements</h5>
+      <p>You can use all the APIs and building blocks of Java in your JSP programming including decision-making statements, loops, etc.</p>
+      <h5>Decision-Making Statements</h5>
+      <p>The if...else block starts out like an ordinary Scriptlet, but the Scriptlet is closed at each line with HTML text included between the Scriptlet tags.</p>
+      <center><img src="img/jsp/f22.png" "></center>
+      <h5>Loop Statements</h5>
+      <p>You can also use three basic types of looping blocks in Java: for, while, and do…while blocks in your JSP programming.</p>
+      <p>You can also use three basic types of looping blocks in Java: for, while, and do…while blocks in your JSP programming.</p>
+      <center><img src="img/jsp/f23.png" "></center>
+      <h5>JSP Operators</h5>
+      <p>JSP supports all the logical and arithmetic operators supported by Java. Following table lists out all the operators with the highest precedence appear at the top of the table, those with the lowest appear at the bottom.</p>
+      <p>Within an expression, higher precedence operators will be evaluated first.</p>
+
+      <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>Category</th>
+              <th>Operator</th>
+              <th>Associativity</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Postfix</td>
+            <td>() [] . (dot operator)</td>
+            <td>Left to right</td>
+            
+          </tr>
+          <tr>
+            <td>Unary</td>
+            <td>++ - - ! ~</td>
+            <td>Right to left</td>
+            
+          </tr>
+          <tr>
+            <td>Multiplicative</td>
+            <td>* / %</td>
+            <td>Left to right</td>
+            
+          </tr>
+          <tr>
+            <td>Additive</td>
+            <td>+ -</td>
+            <td>Left to right</td>
+            
+          </tr>
+          <tr>
+            <td>Shift</td>
+            <td>>> >>> <<</td>
+            <td>Left to right</td>
+            
+          </tr>
+          <tr>
+            <td>Relational</td>
+            <td>> >= < <=</td>
+            <td>Left to right</td>
+            
+          </tr>
+          <tr>
+            <td>Equality</td>
+            <td>== !=</td>
+            <td>Left to right</td>
+            
+          </tr>
+          <tr>
+            <td>Bitwise AND</td>
+            <td>&</td>
+            <td>Left to right</td>
+            
+          </tr>
+          <tr>
+            <td>Bitwise XOR</td>
+            <td>^</td>
+            <td>Left to right</td>
+
+            
+          </tr>
+
+          <tr>
+            <td>Bitwise OR</td>
+            <td>|</td>
+            <td>Left to right</td>
+            
+            
+          </tr>
+          <tr>
+            <td>Logical AND </td>
+            <td>&&</td>
+            <td>Left to right</td>
+            
+            
+          </tr>
+          <tr>
+            <td>Logical OR</td>
+            <td>||</td>
+            <td>Left to right</td>
+            
+            
+          </tr>
+          <tr>
+            <td>Conditional</td>
+            <td>?:</td>
+            <td>Right to left</td>
+            
+            
+          </tr>
+          <tr>
+            <td>Assignment</td>
+            <td>= += -= *= /= %= >>= <<= &= ^= |= </td>
+            <td>Right to left</td>
+            
+            
+          </tr>
+          <tr>
+            <td>Comma</td>
+            <td>,</td>
+            <td>Left to right</td>
+            
+            
+          </tr>
+          
+        </tbody>
+      </table>
+      <br>
+      <h5>JSP Literals</h5>
+      <p>The JSP expression language defines the following literals −</p>
+      <ul>
+        <li>Boolean − true and false</li>
+        <li>Integer − as in Java</li>
+        <li>Floating point − as in Java</li>
+        <li>String − with single and double quotes; " is escaped as \", ' is escaped as \', and \ is escaped as \\.</li>
+        <li>Null − null</li>
+      </ul>
+  </div>
+
+
+
+  <div id="test-swipe-4" class="col s12 white">
+    <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Directives</h3>
+    <p>A JSP directive affects the overall structure of the servlet class. It usually has the following form −</p>
+    <center><img src="img/jsp/f24.png" "></center>
+    <p>Directives can have a number of attributes which you can list down as key-value pairs and separated by commas.</p>
+    <p>The blanks between the @ symbol and the directive name, and between the last attribute and the closing %>, are optional.</p>
+    <p>There are three types of directive tag −</p>
+
+    <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No</th>
+              <th>Directive & Description</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p><%@ page ... %></p>
+            <p>Defines page-dependent attributes, such as scripting language, error page, and buffering requirements.</p></td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p><%@ include ... %></p>
+            <p>Includes a file during the translation phase.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><p><%@ taglib ... %></p><p>Declares a tag library, containing custom actions, used in the page</p></td>
+            
+          </tr>
+          
+          
+        </tbody>
+      </table>
+      <br>
+      <h4>JSP - The page Directive</h4>
+      <p>The page directive is used to provide instructions to the container. These instructions pertain to the current JSP page. You may code page directives anywhere in your JSP page. By convention, page directives are coded at the top of the JSP page.</p>
+      <p>Following is the basic syntax of the page directive −</p>
+      <center><img src="img/jsp/f25.png" "></center>
+      <p>You can write the XML equivalent of the above syntax as follows −</p>
+      <center><img src="img/jsp/f26.png" "></center>
+      <br>
+      <h5>Attributes</h5>
+      <p>Following table lists out the attributes associated with the page directive −</p>
+
+      <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Attribute & Purposer</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p> 
+            buffer
+            </p><p>
+            Specifies a buffering model for the output stream.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>autoFlush</p><p>Controls the behavior of the servlet output buffer.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><p>contentType</p><p>Defines the character encoding scheme.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><p>errorPage</p><p>Defines the URL of another JSP that reports on Java unchecked runtime exceptions.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><p>isErrorPage</p><p>Indicates if this JSP page is a URL specified by another JSP page's errorPage attribute.</p></td>
+
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><p>extends</p><p>Specifies a superclass that the generated servlet must extend.</p></td>
+            
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><p>import</p><p>Specifies a list of packages or classes for use in the JSP as the Java import statement does for Java classes.</p></td>
+
+            
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><p>info</p><p>Defines a string that can be accessed with the servlet's getServletInfo() method.</p></td>
+
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><p>isThreadSafe</p><p>Defines the threading model for the generated servlet.</p></td>
+
+
+            
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td><p>language</p><p>Defines the programming language used in the JSP page.</p></td>
+
+            
+            
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><p>session</p><p>Specifies whether or not the JSP page participates in HTTP sessions</p></td>
+
+            
+            
+          </tr>
+          <tr>
+            <td>12</td>
+            <td><p>isELIgnored</p><p>Specifies whether or not the EL expression within the JSP page will be ignored.</p></td>
+
+            
+            
+          </tr>
+          <tr>
+            <td>13</td>
+            <td><p>isScriptingEnabled</p><p>Determines if the scripting elements are allowed for use.</p></td>
+
+            
+            
+          </tr>
+
+          
+        </tbody>
+      </table>
+      <br>
+      <h4>The include Directive</h4>
+      <p>The include directive is used to include a file during the translation phase. This directive tells the container to merge the content of other external files with the current JSP during the translation phase. You may code the include directives anywhere in your JSP page.</p>
+      <p>The general usage form of this directive is as follows −</p>
+      <center><img src="img/jsp/f27.png" "></center>
+      <p>The filename in the include directive is actually a relative URL. If you just specify a filename with no associated path, the JSP compiler assumes that the file is in the same directory as your JSP.</p>
+      <p>You can write the XML equivalent of the above syntax as follows −</p>
+      <center><img src="img/jsp/f28.png" "></center>
+      <br>
+      <h4>The taglib Directive</h4>
+      <p>The JavaServer Pages API allow you to define custom JSP tags that look like HTML or XML tags and a tag library is a set of user-defined tags that implement custom behavior.</p>
+      <p>The taglib directive declares that your JSP page uses a set of custom tags, identifies the location of the library, and provides means for identifying the custom tags in your JSP page.</p>
+      <p>The taglib directive follows the syntax given below −</p>
+      <center><img src="img/jsp/f29.png" "></center>
+      <p>Here, the uri attribute value resolves to a location the container understands and the prefix attribute informs a container what bits of markup are custom actions.</p>
+      <p>You can write the XML equivalent of the above syntax as follows −</p>
+      <center><img src="img/jsp/f30.png" "></center>
+  </div>
+
+
+
+  <div id="test-swipe-5" class="col s12 white">
+    <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Actions</h3>
+    <p>These actions use constructs in XML syntax to control the behavior of the servlet engine. You can dynamically insert a file, reuse JavaBeans components, forward the user to another page, or generate HTML for the Java plugin.</p>
+    <p>There is only one syntax for the Action element, as it conforms to the XML standard −</p>
+    <center><img src="img/jsp/f31.png" "></center>
+    <p>Action elements are basically predefined functions. The following table lists out the available JSP actions −</p>
+
+    <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Syntax & Purpose</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>jsp:include</p><p>Includes a file at the time the page is requested.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>jsp:useBean</p><p>Finds or instantiates a JavaBean.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><p>jsp:setProperty</p><p>Sets the property of a JavaBean.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><p>jsp:getProperty</p><p>Inserts the property of a JavaBean into the output.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><p>jsp:forward</p><p>Forwards the requester to a new page.</p></td>
+
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><p>jsp:plugin</p><p>Generates browser-specific code that makes an OBJECT or EMBED tag for the Java plugin.</p></td>
+            
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><p>jsp:element</p><p>Defines XML elements dynamically.</p></td>
+
+            
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><p>jsp:attribute</p><p>Defines dynamically-defined XML element's attribute.</p></td>
+
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><p>jsp:body</p><p>Defines dynamically-defined XML element's body.</p></td>
+
+
+            
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td><p>jsp:text</p><p>Used to write template text in JSP pages and documents.</p></td>
+
+            
+            
+          </tr>
+
+          
+        </tbody>
+      </table>
+      <br>
+      <h4>Common Attributes</h4>
+      <p>There are two attributes that are common to all Action elements: the id attribute and the scope attribute.</p>
+      <br>
+      <h5>Id attribute</h5>
+      <p>The id attribute uniquely identifies the Action element, and allows the action to be referenced inside the JSP page. If the Action creates an instance of an object, the id value can be used to reference it through the implicit object PageContext.</p>
+      <h5>Scope attribute</h5>
+      <p>This attribute identifies the lifecycle of the Action element. The id attribute and the scope attribute are directly related, as the scope attribute determines the lifespan of the object associated with the id. The scope attribute has four possible values: (a) page, (b)request, (c)session, and (d) application.</p>
+      <br>
+      <h4>The <jsp:include> Action</h4>
+      <p>This action lets you insert files into the page being generated. The syntax looks like this −</p>
+      <center><img src="img/jsp/f32.png" "></center>
+      <p>Unlike the include directive, which inserts the file at the time the JSP page is translated into a servlet, this action inserts the file at the time the page is requested.</p>
+      <br>
+      <p>Following table lists out the attributes associated with the include action −</p>
+
+      <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Attribute & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>page</p><p>The relative URL of the page to be included.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>flush</p><p>The boolean attribute determines whether the included resource has its buffer flushed before it is included.</p></td>
+            
+            
+          </tr>
+          </tbody>
+          </table>
+          <br>
+          
+  </div>
+
+
+
+  <div id="test-swipe-6" class="col s12 white">
+    <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Objects</h3>
+  </div>
+
+
+
+  <div id="test-swipe-7" class="col s12 white">
+    <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Client-Server</h3>
+  </div>
+
+     
+</main>
+
+
+
+
+<hr>
+
+
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
