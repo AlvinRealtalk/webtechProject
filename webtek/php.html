@@ -56,8 +56,7 @@
         
 
 </div>
-
-  <main>
+<main>
         <center><img src="img/php.png" alt="Mountain View" style="width:200px;height:100px;"></center>
         <div class="container">
 
@@ -93,8 +92,12 @@
          <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$GLOBALS</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
+                <h5>Description</h5>
+                <p>An associative array containing references to all variables which are currently defined in the global scope of the script. The variable names are the keys of the array.</p>
+                <h5>Example</h5>
+ <img src="img/php/1.png" alt="">
+  <p>The above example will output something similar to:</p>
+   <img src="img/php/2.png" alt="">
               
       </div>
       
@@ -102,26 +105,33 @@
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$_SERVER</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
-              
+
+              <h5>Description</h5>
+                <p>$_SERVER is an array containing information such as headers, paths, and script locations. The entries in this array are created by the web server. There is no guarantee that every web server will provide any of these; servers may omit some, or provide others not listed here. That said, a large number of these variables are accounted for in the » CGI/1.1 specification, so you should be able to expect those.</p>
       </div>
       
           </li>
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$_GET</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
-              
+                  <h5>Description</h5>
+                <p>An associative array of variables passed to the current script via the URL parameters.</p>
+                <h5>Example</h5>
+ <img src="img/php/3.png" alt="">
+   <p>The above example will output something similar to:</p>
+   <img src="img/php/4.png" alt="">
       </div>
       
           </li>
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$_POST</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
+                  <h5>Description</h5>
+                <p>An associative array of variables passed to the current script via the HTTP POST method when using application/x-www-form-urlencoded or multipart/form-data as the HTTP Content-Type in the request.</p>
+                <h5>Example</h5>
+ <img src="img/php/5.png" alt="">
+   <p>The above example will output something similar to:</p>
+   <img src="img/php/6.png" alt="">
               
       </div>
       
@@ -129,17 +139,24 @@
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$_FILES</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
-              
+              <h5>Description</h5>
+                <p>An associative array of items uploaded to the current script via the HTTP POST method. The structure of this array is outlined in the POST method uploads section.
+                <hr>
+                <br>$HTTP_POST_FILES contains the same initial information, but is not a superglobal. (Note that $HTTP_POST_FILES and $_FILES are different variables and that PHP handles them as such)</p>
       </div>
       
           </li>
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$_COOKIE</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
+                 <h5>Description</h5>
+                <p>An associative array of variables passed to the current script via HTTP Cookies.
+<br>
+$HTTP_COOKIE_VARS contains the same initial information, but is not a superglobal. (Note that $HTTP_COOKIE_VARS and $_COOKIE are different variables and that PHP handles them as such)</p>
+                <h5>Example</h5>
+ <img src="img/php/7.png" alt="">
+   <p>The above example will output something similar to:</p>
+   <img src="img/php/6.png" alt="">
               
       </div>
       
@@ -147,8 +164,10 @@
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$SESSION</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
+                <h5>Description</h5>
+                <p>An associative array containing session variables available to the current script. See the Session functions documentation for more information on how this is used.
+                <hr>
+                <br>$HTTP_SESSION_VARS contains the same initial information, but is not a superglobal. (Note that $HTTP_SESSION_VARS and $_SESSION are different variables and that PHP handles them as such)</p>
               
       </div>
       
@@ -156,8 +175,9 @@
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$REQUEST</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
+                <h5>Description</h5>
+                <p>An associative array that by default contains the contents of $_GET, $_POST and $_COOKIE.
+                <hr></p>
               
       </div>
       
@@ -165,8 +185,12 @@
             <li>
                 <div class="collapsible-header center" style = "font-weight:bold; font-family: consolas;" ><i class="material-icons" ></i><h5>$ENV</h5></div>
                 <div class="collapsible-body">
-                  <h5>ACCESSING ARRAY ELEMENTS</h5>
-                
+                  <p>An associative array of variables passed to the current script via the environment method.
+                <hr>
+                <br>These variables are imported into PHP's global namespace from the environment under which the PHP parser is running. Many are provided by the shell under which PHP is running and different systems are likely running different kinds of shells, a definitive list is impossible. Please see your shell's documentation for a list of defined environment variables.
+                <br>Other environment variables include the CGI variables, placed there regardless of whether PHP is running as a server module or CGI processor.
+                <br>
+                $HTTP_ENV_VARS contains the same initial information, but is not a superglobal. (Note that $HTTP_ENV_VARS and $_ENV are different variables and that PHP handles them as such)</p>
               
       </div>
       
