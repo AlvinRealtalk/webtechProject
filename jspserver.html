@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+		<head>
+
+					  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+					  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+					  <title>Webtek</title>
+
+					  <!-- start of CSS links -->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+					  <!-- start of CSS links -->
+
+					 <style>
+
+							        body {
+							    display: flex;
+							    min-height: 100vh;
+							    flex-direction: column;
+							  }
+
+							  main {
+							    flex: 1 0 auto;
+							  }
+ 
+
+					  </style>
+		  </head>
+
+		  		<body bgcolor="#ffab91">
+
+
+
+
+  <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
+
+
+
+  <ul id="slide-out" class="side-nav">
+
+ 
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    
+    <li><a class="waves-effect grey" href="index.html">HOME</a></li>
+    <li><a class="waves-effect grey" href="finals.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="jsp.html">JSP</a></li>
+    <li><a class="waves-effect" href="jspobjects.html">JSP-OBJECTS</a></li>
+    <li><a class="waves-effect" href="jspclient.html">JSP-CLIENT REQUEST</a></li>
+    <li><a class="waves-effect" href="jspserver.html">JSP-SERVER RESPONSE</a></li>
+    <li><a class="waves-effect" href="jstltags.html">JSTL</a></li>
+    <li><a class="waves-effect" href="php.html">PHP</a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+</div>
+
+<main>
+<center><img src="img/jspicon.png" alt="Mountain View" style="width:200px;height:200px;"></center>
+<div class="container ">
+<ul class="collection">
+     <li class="collection-item"><h3 class="center grey lighten-1" style = "  font-family: consolas; color:black; ">JSP-Server Response</h3>
+     <p>When a Web server responds to a HTTP request, the response typically consists of a status line, some response headers, a blank line, and the document. A typical response looks like this −</p>
+     <center><img src="img/jsp/f44.png" "></center>
+     <p>The status line consists of the HTTP version (HTTP/1.1 in the example), a status code (200 in the example), and a very short message corresponding to the status code (OK in the example).</p>
+     <p>Following is a summary of the most useful HTTP 1.1 response headers which go back to the browser from the web server. These headers are frequently used in web programming −</p>
+
+
+     <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Header & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+            <p>Allow</p> 
+            <p>This header specifies the request methods (GET, POST, etc.) that the server supports.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+            <p>Cache-Control</p>
+            <p>This header specifies the circumstances in which the response document can safely be cached. It can have values public, private or no-cache etc. Public means document is cacheable, Private means document is for a single user and can only be stored in private (nonshared) caches and no-cache means document should never be cached.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+            <p>Connection</p>
+            <p>This header instructs the browser whether to use persistent HTTP connections or not. A value of close instructs the browser not to use persistent HTTP connections and keep-alive means using persistent connections.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+            <p>Content-Disposition</p>
+            <p>This header lets you request that the browser ask the user to save the response to disk in a file of the given name.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+            <p>Content-Encoding</p>
+            <p>This header specifies the way in which the page was encoded during transmission.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+            <p>Content-Language</p>
+            <p>This header signifies the language in which the document is written. For example, en, en-us, ru, etc.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+            <p>Content-Length</p>
+            <p>This header indicates the number of bytes in the response. This information is needed only if the browser is using a persistent (keep-alive) HTTP connection.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+            <p>Content-Type</p>
+            <p>This header gives the MIME (Multipurpose Internet Mail Extension) type of the response document.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+            <p>Expires</p>
+            <p>This header specifies the time at which the content should be considered out-of-date and thus no longer be cached.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+            <p>Last-Modified</p>
+            <p>This header indicates when the document was last changed. The client can then cache the document and supply a date by an If-Modified-Since request header in later requests.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>
+            <p>Location</p>
+            <p>This header should be included with all responses that have a status code in the 300s. This notifies the browser of the document address. The browser automatically reconnects to this location and retrieves the new document.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>
+            <p>Refresh</p>
+            <p>This header specifies how soon the browser should ask for an updated page. You can specify time in number of seconds after which a page would be refreshed.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>
+            <p>Retry-After</p>
+            <p>This header can be used in conjunction with a 503 (Service Unavailable) response to tell the client how soon it can repeat its request.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>
+            <p>Set-Cookie</p>
+            <p>This header specifies a cookie associated with the page.</p>
+            </td>
+            
+          </tr>
+          </tbody>
+          </table>
+          <br>
+          <h4>The HttpServletResponse Object</h4>
+          <p>The response object is an instance of a javax.servlet.http.HttpServletResponse object. Just as the server creates the request object, it also creates an object to represent the response to the client.</p>
+          <p>The response object also defines the interfaces that deal with creating new HTTP headers. Through this object, the JSP programmer can add new cookies or date stamps, HTTP status codes etc.</p>
+          <p>The following methods can be used to set HTTP response header in your servlet program. These methods are available with the HttpServletResponse object. This object represents the server response.</p>
+
+          <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Method & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+            <p>String encodeRedirectURL(String url)</p> 
+            <p>Encodes the specified URL for use in the sendRedirect method or, if encoding is not needed, returns the URL unchanged.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+            <p>String encodeURL(String url)</p>
+            <p>Encodes the specified URL by including the session ID in it, or, if encoding is not needed, returns the URL unchanged.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>
+            <p>boolean containsHeader(String name)</p>
+            <p>Returns a boolean indicating whether the named response header has already been set.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+            <p>boolean isCommitted()</p>
+            <p>Returns a boolean indicating if the response has been committed.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+            <p>void addCookie(Cookie cookie)</p>
+            <p>Adds the specified cookie to the response.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>
+            <p>void addDateHeader(String name, long date)</p>
+            <p>Adds a response header with the given name and date-value.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>
+            <p>void addHeader(String name, String value)</p>
+            <p>Adds a response header with the given name and value.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+            <p>void addIntHeader(String name, int value)</p>
+            <p>Adds a response header with the given name and integer value.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+            <p>void flushBuffer()</p>
+            <p>Forces any content in the buffer to be written to the client.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>
+            <p>void reset()</p>
+            <p>Clears any data that exists in the buffer as well as the status code and headers.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>
+            <p>void resetBuffer()</p>
+            <p>Clears the content of the underlying buffer in the response without clearing headers or status code.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>
+            <p>void sendError(int sc)</p>
+            <p>Sends an error response to the client using the specified status code and clearing the buffer.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>
+            <p>void sendError(int sc, String msg)</p>
+            <p>Sends an error response to the client using the specified status.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>
+            <p>void sendRedirect(String location)</p>
+            <p>Sends a temporary redirect response to the client using the specified redirect location URL.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>
+            <p>void setBufferSize(int size)</p>
+            <p>Sets the preferred buffer size for the body of the response.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>
+            <p>void setCharacterEncoding(String charset)</p>
+            <p>Sets the character encoding (MIME charset) of the response being sent to the client, for example, to UTF-8.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>
+            <p>void setContentLength(int len)</p>
+            <p>Sets the length of the content body in the response In HTTP servlets; this method also sets the HTTP Content-Length header.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>
+            <p>void setContentType(String type)</p>
+            <p>Sets the content type of the response being sent to the client, if the response has not been committed yet.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>19</td>
+            <td>
+            <p>void setDateHeader(String name, long date)</p>
+            <p>Sets a response header with the given name and date-value.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>
+            <p>void setHeader(String name, String value)</p>
+            <p>Sets a response header with the given name and value.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>21</td>
+            <td>
+            <p>void setIntHeader(String name, int value)</p>
+            <p>Sets a response header with the given name and integer value.</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>22</td>
+            <td>
+            <p>void setLocale(Locale loc)</p>
+            <p>Sets the locale of the response, if the response has not been committed yet.
+
+</p>
+            </td>
+            
+          </tr>
+          <tr>
+            <td>23</td>
+            <td>
+            <p>void setStatus(int sc)</p>
+            <p>Sets the status code for this response.</p>
+            </td>
+            
+          </tr>
+          </tbody>
+          </table>
+          <br>
+          <h4>HTTP Header Response Example</h4>
+          <p>Following example would use setIntHeader() method to set Refresh header to simulate a digital clock −</p>
+          <center><img src="img/jsp/f45.png" "></center>
+     
+
+     
+</main>
+
+
+
+
+<hr>
+
+
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
