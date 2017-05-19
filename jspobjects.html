@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+            <title>Webtek</title>
+
+            <!-- start of CSS links -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+
+
+            <!-- start of CSS links -->
+
+           <style>
+
+                      body {
+                  display: flex;
+                  min-height: 100vh;
+                  flex-direction: column;
+                }
+
+                main {
+                  flex: 1 0 auto;
+                }
+ 
+
+            </style>
+      </head>
+
+          <body bgcolor="#ffab91">
+
+
+
+
+  <nav class="grey darken-3" style = "height:80px;" role="navigation">
+    <div class="nav-wrapper container">
+    <a id="logo-container" href="index.html" class="brand-logo center"><img src="img/logo.png" alt="Unsplashed background img 1" height="70" width="70"></a>
+    </div>
+  </nav>
+
+
+
+  <ul id="slide-out" class="side-nav">
+
+ 
+    <li><a class="header center grey darken-3" style="color:white; font-family:consolas; font-weight:bold; font-size:20px;">SELECT A TOPIC</a></li>
+    
+    <li><a class="waves-effect grey" href="index.html">HOME</a></li>
+    <li><a class="waves-effect grey" href="finals.html">INTRODUCTION</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="waves-effect" href="jsp.html">JSP</a></li>
+    <li><a class="waves-effect" href="jspobjects.html">JSP-OBJECTS</a></li>
+    <li><a class="waves-effect" href="jspclient.html">JSP-CLIENT REQUEST</a></li>
+    <li><a class="waves-effect" href="jspserver.html">JSP-SERVER RESPONSE</a></li>
+    <li><a class="waves-effect" href="jstltags.html">JSTL</a></li>
+    <li><a class="waves-effect" href="php.html">PHP</a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+    <li><a class="waves-effect" href=""></a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="medium material-icons">menu</i></a>
+        
+
+</div>
+
+<main>
+<center><img src="img/jspicon.png" alt="Mountain View" style="width:200px;height:200px;"></center>
+<div class="container ">
+<ul class="collection">
+     <li class="collection-item"><h3 class="center grey lighten-1" style = "  font-family: consolas; color:black; ">JSP-Objects</h3>
+
+
+
+     <div id="test-swipe-6" class="col s12 white">
+    
+
+    <p>These Objects are the Java objects that the JSP Container makes available to the developers in each page and the developer can call them directly without being explicitly declared. JSP Implicit Objects are also called pre-defined variables.</p>
+    <p>Following table lists out the nine Implicit Objects that JSP supports −</p>
+
+    <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Object & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>request</p><p>This is the HttpServletRequest object associated with the request.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>response</p><p>This is the HttpServletResponse object associated with the response to the client.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><p>out</p><p>This is the PrintWriter object used to send output to the client.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><p>session</p><p>This is the HttpSession object associated with the request.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><p>application</p><p>This is the ServletContext object associated with the application context.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><p>config</p><p>This is the ServletConfig object associated with the page.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><p>pageContext</p><p>This encapsulates use of server-specific features like higher performance JspWriters.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><p>page</p><p>This is simply a synonym for this, and is used to call the methods defined by the translated servlet class.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><p>Exception</p><p>The Exception object allows the exception data to be accessed by designated JSP.</p></td>
+            
+            
+          </tr>
+          
+          </tbody>
+          </table>
+          <br>
+          <h4>The request Object</h4>
+          <p>The request object is an instance of a javax.servlet.http.HttpServletRequest object. Each time a client requests a page the JSP engine creates a new object to represent that request.</p>
+          <p>The request object provides methods to get the HTTP header information including form data, cookies, HTTP methods etc.</p>
+          <br>
+          <h4>The response Object</h4>
+          <p>The response object is an instance of a javax.servlet.http.HttpServletResponse object. Just as the server creates the request object, it also creates an object to represent the response to the client.</p>
+          <p>The response object also defines the interfaces that deal with creating new HTTP headers. Through this object the JSP programmer can add new cookies or date stamps, HTTP status codes, etc.</p>
+          <br>
+          <h4>The out Object</h4>
+          <p>The out implicit object is an instance of a javax.servlet.jsp.JspWriter object and is used to send content in a response.</p>
+          <p>The initial JspWriter object is instantiated differently depending on whether the page is buffered or not. Buffering can be easily turned off by using the buffered = 'false' attribute of the page directive.</p>
+          <p>The JspWriter object contains most of the same methods as the java.io.PrintWriter class. However, JspWriter has some additional methods designed to deal with buffering. Unlike the PrintWriter object, JspWriter throws IOExceptions.</p>
+          <p>Following table lists out the important methods that we will use to write boolean char, int, double, object, String, etc.</p>
+
+          <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Method & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>out.print(dataType dt)</p><p>Print a data type value</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>out.println(dataType dt)</p><p>Print a data type value then terminate the line with new line character.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><p>out.flush()</p><p>Flush the stream.</p></td>
+            
+            
+          </tr>
+          </tbody>
+          </table>
+          <br>
+          <h4>The session Object</h4>
+          <p>The session object is an instance of javax.servlet.http.HttpSession and behaves exactly the same way that session objects behave under Java Servlets.</p>
+          <br>
+          <h4>The application Object</h4>
+          <p>The application object is direct wrapper around the ServletContext object for the generated Servlet and in reality an instance of a javax.servlet.ServletContext object.</p>
+          <p>This object is a representation of the JSP page through its entire lifecycle. This object is created when the JSP page is initialized and will be removed when the JSP page is removed by the jspDestroy() method.</p>
+          <p>By adding an attribute to application, you can ensure that all JSP files that make up your web application have access to it.</p>
+          <br>
+          <h4>The config Object</h4>
+          <p>The config object is an instantiation of javax.servlet.ServletConfig and is a direct wrapper around the ServletConfig object for the generated servlet.</p>
+          <p>This object allows the JSP programmer access to the Servlet or JSP engine initialization parameters such as the paths or file locations etc.</p>
+          <p>The following config method is the only one you might ever use, and its usage is trivial −</p>
+          <center><img src="img/jsp/f42.png" "></center>
+          <p>This returns the servlet name, which is the string contained in the < servlet-name > element defined in the WEB-INF\web.xml file.</p>
+          <br>
+          <h4>The pageContext Object</h4>
+          <p>The pageContext object is an instance of a javax.servlet.jsp.PageContext object. The pageContext object is used to represent the entire JSP page.</p>
+          <p>This object is intended as a means to access information about the page while avoiding most of the implementation details.</p>
+          <p>This object stores references to the request and response objects for each request. The application, config, session, and out objects are derived by accessing attributes of this object.</p>
+          <p>The pageContext object also contains information about the directives issued to the JSP page, including the buffering information, the errorPageURL, and page scope.</p>
+          <br>
+          <h4>The page Object</h4>
+          <p>This object is an actual reference to the instance of the page. It can be thought of as an object that represents the entire JSP page.</p>
+          <p>The page object is really a direct synonym for the this object.</p>
+          <br>
+          <h4>The exception Object</h4>
+          <p>The exception object is a wrapper containing the exception thrown from the previous page. It is typically used to generate an appropriate response to the error condition.</p>
+  </div>
+
+     
+</main>
+
+
+
+
+<hr>
+
+
+ <footer class="page-footer grey darken-3">
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="#group1414">webtech group |</a> 
+        De Alban
+        <a class="brown-text text-lighten-3" href="#group1414">Arciosa</a>
+        Lim
+        <a class="brown-text text-lighten-3" href="#group1414">Maslian</a>
+        Quirante
+        <!-- STILL A TEST <p><b>Download PDF: </b> <a href="file/primer1.pdf"><img  src = "img/pdf.png" style="height: 50px; width: 40px;"></a></p> -->
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/collapsible.js"></script>
+
+
+</body>
+
+
+
+</html>
