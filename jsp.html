@@ -55,12 +55,12 @@
     <li><a class="waves-effect grey" href="index.html">HOME</a></li>
     <li><a class="waves-effect grey" href="finals.html">INTRODUCTION</a></li>
     <li><div class="divider"></div></li>
-    <li><a class="waves-effect " href="jsp.html">JSP</a></li>
-    <li><a class="waves-effect" href=""></a></li>
-    <li><a class="waves-effect" href=""></a></li>
-    <li><a class="waves-effect" href=""></a></li>
-    <li><a class="waves-effect" href=""></a></li>
-    <li><a class="waves-effect " href=""></a></li>
+    <li><a class="waves-effect" href="jsp.html">JSP</a></li>
+    <li><a class="waves-effect" href="jspobjects.html">JSP-OBJECTS</a></li>
+    <li><a class="waves-effect" href="jspclient.html">JSP-CLIENT REQUEST</a></li>
+    <li><a class="waves-effect" href="jspserver.html">JSP-SERVER RESPONSE</a></li>
+    <li><a class="waves-effect" href="jstltags.html">JSTL</a></li>
+    <li><a class="waves-effect" href="php.html">PHP</a></li>
     <li><a class="waves-effect" href=""></a></li>
     <li><a class="waves-effect" href=""></a></li>
     <li><a class="waves-effect" href=""></a></li>
@@ -103,10 +103,10 @@
     <li class="tab col s3"><a href="#test-swipe-3">Syntax</a></li>
     <li class="tab col s3"><a href="#test-swipe-4">Directives</a></li>
     <li class="tab col s3"><a href="#test-swipe-5">Actions</a></li>
-    <li class="tab col s3"><a href="#test-swipe-6">Objects</a></li>
-    <li class="tab col s3"><a href="#test-swipe-7">Client/Server</a></li>
+    
 
   </ul>
+
   <div id="test-swipe-1" class="col s12 white">
 
   <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Architecture</h3>
@@ -974,14 +974,177 @@
           </tbody>
           </table>
           <br>
+          <h4>The < jsp:useBean > Action</h4>
+          <p>The useBean action is quite versatile. It first searches for an existing object utilizing the id and scope variables. If an object is not found, it then tries to create the specified object.</p>
+          <p>The simplest way to load a bean is as follows −</p>
+          <center><img src="img/jsp/f33.png" "></center>
+          <p>Once a bean class is loaded, you can use jsp:setProperty and jsp:getProperty actions to modify and retrieve the bean properties.</p>
+          <p>Following table lists out the attributes associated with the useBean action −</p>
+
+          <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Attribute & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>class</p><p>Designates the full package name of the bean.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>type</p><p>Specifies the type of the variable that will refer to the object.</p></td>
+            
+            
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td><p>beanName</p><p>Gives the name of the bean as specified by the instantiate () method of the java.beans.Beans class.</p></td>
+            
+            
+          </tr>
+          </tbody>
+          </table>
+          <br>
+          <h4>The < jsp:setProperty > Action</h4>
+          <p>The setProperty action sets the properties of a Bean. The Bean must have been previously defined before this action. There are two basic ways to use the setProperty action −</p>
+          <p>You can use jsp:setProperty after, but outside of a jsp:useBean element, as given below −</p>
+          <center><img src="img/jsp/f34.png" "></center>
+          <p>In this case, the jsp:setProperty is executed regardless of whether a new bean was instantiated or an existing bean was found.</p>
+          <p>A second context in which jsp:setProperty can appear is inside the body of a jsp:useBean element, as given below −</p>
+          <center><img src="img/jsp/f35.png" "></center>
+          <p>Here, the jsp:setProperty is executed only if a new object was instantiated, not if an existing one was found.</p>
+          <p>Following table lists out the attributes associated with the setProperty action −</p>
+
+          <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Attribute & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>name</p><p>Designates the bean the property of which will be set. The Bean must have been previously defined.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>property</p><p>Indicates the property you want to set. A value of "*" means that all request parameters whose names match bean property names will be passed to the appropriate setter methods.</p></td>
+            
+            
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td><p>value</p><p>The value that is to be assigned to the given property. The the parameter's value is null, or the parameter does not exist, the setProperty action is ignored.</p></td>
+            
+            
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td><p>param</p><p>The param attribute is the name of the request parameter whose value the property is to receive. You can't use both value and param, but it is permissible to use neither.</p></td>
+            
+            
+          </tr>
+          </tbody>
+          </table>
+          <br>
+          <h4>The < jsp:getProperty > Action</h4>
+          <p>The getProperty action is used to retrieve the value of a given property and converts it to a string, and finally inserts it into the output.</p>
+          <p>The getProperty action has only two attributes, both of which are required. The syntax of the getProperty action is as follows −</p>
+          <center><img src="img/jsp/f36.png" "></center>
+          <p>Following table lists out the required attributes associated with the getProperty action −</p>
+
+          <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Attribute & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>name</p><p>The name of the Bean that has a property to be retrieved. The Bean must have been previously defined.</p></td>
+            
+            
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><p>property</p><p>The property attribute is the name of the Bean property to be retrieved.</p></td>
+            
+            
+          </tr>
+
           
+          </tbody>
+          </table>
+          <br>
+          <h4>The < jsp:forward > Action</h4>
+          <p>The forward action terminates the action of the current page and forwards the request to another resource such as a static page, another JSP page, or a Java Servlet.</p>
+          <p>Following is the syntax of the forward action −</p>
+          <center><img src="img/jsp/f37.png" "></center>
+          <p>Following table lists out the required attributes associated with the forward action −</p>
+
+          <table class="bordered highlight">
+        <thead>
+          <tr>
+              <th>S.No.</th>
+              <th>Attribute & Description</th>
+              
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><p>page</p><p>Should consist of a relative URL of another resource such as a static page, another JSP page, or a Java Servlet.</p></td>
+            
+            
+          </tr>
+          
+
+          
+          </tbody>
+          </table>
+          <br>
+          <h4>The < jsp:plugin > Action</h4>
+          <p>The plugin action is used to insert Java components into a JSP page. It determines the type of browser and inserts the <object> or <embed> tags as needed.</p>
+          <p>If the needed plugin is not present, it downloads the plugin and then executes the Java component. The Java component can be either an Applet or a JavaBean.</p>
+          <p>The plugin action has several attributes that correspond to common HTML tags used to format Java components. The <param> element can also be used to send parameters to the Applet or Bean.</p>
+          <p>Following is the typical syntax of using the plugin action −</p>
+          <center><img src="img/jsp/f38.png" "></center>
+          <p>You can try this action using some applet if you are interested. A new element, the <fallback> element, can be used to specify an error string to be sent to the user in case the component fails.</p>
+          <center><img src="img/jsp/f39.png" "></center>
+          <p>The < jsp:element >, < jsp:attribute > and < jsp:body > actions are used to define XML elements dynamically. The word dynamically is important, because it means that the XML elements can be generated at request time rather than statically at compile time.</p>
+          <br>
+          <h4>The < jsp:text > Action</h4>
+          <p>The < jsp:text > action can be used to write the template text in JSP pages and documents. Following is the simple syntax for this action −</p>
+          <center><img src="img/jsp/f40.png" "></center>
+          <p>The body of the template cannot contain other elements; it can only contain text and EL expressions (Note − EL expressions are explained in a subsequent chapter). Note that in XML files, you cannot use expressions such as ${whatever > 0}, because the greater than signs are illegal. Instead, use the gt form, such as ${whatever gt 0} or an alternative is to embed the value in a CDATA section.</p>
+          <center><img src="img/jsp/f41.png" "></center>
+
+
   </div>
 
 
 
-  <div id="test-swipe-6" class="col s12 white">
-    <li class="collection-item"><h3 class="center" style = "  font-family: consolas; color:black; ">JSP-Objects</h3>
-  </div>
+  
 
 
 
